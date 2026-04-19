@@ -1,0 +1,25 @@
+// Version: 1.0.0
+type ExternalBlob__246066408 = Blob;
+type ImageId__1019964855 = ImageId__216201135;
+type ImageId__216201135 = Nat;
+type Image__340641932 =
+  {
+    blob : ExternalBlob__246066408;
+    filename : Text;
+    id : ImageId__1019964855;
+    uploadedAt : Timestamp__643361263
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Timestamp__301639476 = Int;
+type Timestamp__643361263 = Timestamp__301639476;
+actor {
+  stable var _nextId : Nat;
+  stable images :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Image__340641932]];
+      var elementIndex : Nat__490723111
+    };
+  stable var nextImageId : Nat
+};

@@ -1,0 +1,21 @@
+{
+  "overview": "A beautiful nature photo gallery where anyone can upload and view stunning nature images. Features a responsive masonry grid, drag-and-drop uploads, and silky-smooth animations throughout.",
+  "features": [
+    "Drag-and-drop image upload with progress feedback",
+    "Public masonry gallery visible to everyone",
+    "Smooth fade-in and staggered animations on image load",
+    "Full-screen lightbox with smooth open/close transitions",
+    "Responsive design for mobile, tablet, and desktop",
+    "Image metadata display (filename, upload date)"
+  ],
+  "category": "gallery",
+  "tags": [
+    "nature",
+    "gallery",
+    "photos",
+    "animations",
+    "upload",
+    "masonry"
+  ],
+  "last_updated": "2026-04-19T15:34:05.918Z"
+}
