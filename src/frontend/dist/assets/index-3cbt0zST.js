@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/GalleryPage-HOKf4Ze-.js","assets/useImages-8dYvdmNY.js","assets/UploadPage-B_MvFETa.js"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/GalleryPage-XwJsGRw7.js","assets/useImages-g2jPE6uG.js","assets/UploadPage-Brinrz5T.js"])))=>i.map(i=>d[i]);
 var __defProp = Object.defineProperty;
 var __typeError = (msg) => {
   throw TypeError(msg);
@@ -18,7 +18,7 @@ var __privateWrapper = (obj, member, setter, getter) => ({
     return __privateGet(obj, member, getter);
   }
 });
-var _disableTimeVerification, _agent, _inner, _expirationTime, _rawKey, _derKey, _a2, _currentInterval, _randomizationFactor, _multiplier, _maxInterval, _startTime, _maxElapsedTime, _maxIterations, _date, _count, _rootKeyPromise, _shouldFetchRootKey, _timeDiffMsecs, _hasSyncedTime, _syncTimePromise, _shouldSyncTime, _identity, _fetch, _fetchOptions, _callOptions, _credentials, _retryTimes, _backoffStrategy, _maxIngressExpiryInMinutes, _HttpAgent_instances, maxIngressExpiryInMs_get, _queryPipeline, _updatePipeline, _subnetKeys, _verifyQuerySignatures, requestAndRetryQuery_fn, requestAndRetry_fn, _verifyQueryResponse, asyncGuard_fn, rootKeyGuard_fn, syncTimeGuard_fn, _focused, _cleanup, _setup, _b2, _provider, _providerCalled, _c, _online, _cleanup2, _setup2, _d, _gcTimeout, _e, _initialState, _revertState, _cache, _client, _retryer, _defaultOptions, _abortSignalConsumed, _Query_instances, isInitialPausedFetch_fn, dispatch_fn, _f, _client2, _observers, _mutationCache, _retryer2, _Mutation_instances, dispatch_fn2, _g, _mutations, _scopes, _mutationId, _h, _queries, _i, _queryCache, _mutationCache2, _defaultOptions2, _queryDefaults, _mutationDefaults, _mountCount, _unsubscribeFocus, _unsubscribeOnline, _j, _rawKey2, _derKey2, _publicKey, _privateKey, _inner2, _delegation, _options;
+var _disableTimeVerification, _agent, _inner, _expirationTime, _rawKey, _derKey, _a2, _currentInterval, _randomizationFactor, _multiplier, _maxInterval, _startTime, _maxElapsedTime, _maxIterations, _date, _count, _rootKeyPromise, _shouldFetchRootKey, _timeDiffMsecs, _hasSyncedTime, _syncTimePromise, _shouldSyncTime, _identity, _fetch, _fetchOptions, _callOptions, _credentials, _retryTimes, _backoffStrategy, _maxIngressExpiryInMinutes, _HttpAgent_instances, maxIngressExpiryInMs_get, _queryPipeline, _updatePipeline, _subnetKeys, _verifyQuerySignatures, requestAndRetryQuery_fn, requestAndRetry_fn, _verifyQueryResponse, asyncGuard_fn, rootKeyGuard_fn, syncTimeGuard_fn, _focused, _cleanup, _setup, _b2, _provider, _providerCalled, _c, _online, _cleanup2, _setup2, _d, _gcTimeout, _e, _initialState, _revertState, _cache, _client, _retryer, _defaultOptions, _abortSignalConsumed, _Query_instances, isInitialPausedFetch_fn, dispatch_fn, _f, _client2, _currentQuery, _currentQueryInitialState, _currentResult, _currentResultState, _currentResultOptions, _currentThenable, _selectError, _selectFn, _selectResult, _lastQueryWithDefinedData, _staleTimeoutId, _refetchIntervalId, _currentRefetchInterval, _trackedProps, _QueryObserver_instances, executeFetch_fn, updateStaleTimeout_fn, computeRefetchInterval_fn, updateRefetchInterval_fn, updateTimers_fn, clearStaleTimeout_fn, clearRefetchInterval_fn, updateQuery_fn, notify_fn, _g, _client3, _observers, _mutationCache, _retryer2, _Mutation_instances, dispatch_fn2, _h, _mutations, _scopes, _mutationId, _i, _client4, _currentResult2, _currentMutation, _mutateOptions, _MutationObserver_instances, updateResult_fn, notify_fn2, _j, _queries, _k, _queryCache, _mutationCache2, _defaultOptions2, _queryDefaults, _mutationDefaults, _mountCount, _unsubscribeFocus, _unsubscribeOnline, _l, _rawKey2, _derKey2, _publicKey, _privateKey, _inner2, _delegation, _options;
 function _mergeNamespaces(n, m2) {
   for (var i = 0; i < m2.length; i++) {
     const e = m2[i];
@@ -115,7 +115,7 @@ reactJsxRuntime_production.jsxs = jsxProd;
   jsxRuntime.exports = reactJsxRuntime_production;
 }
 var jsxRuntimeExports = jsxRuntime.exports;
-class ExternalBlob {
+let ExternalBlob$2 = class ExternalBlob {
   constructor(directURL, blob) {
     __publicField(this, "_blob");
     __publicField(this, "directURL");
@@ -150,7 +150,7 @@ class ExternalBlob {
     this.onProgress = onProgress;
     return this;
   }
-}
+};
 var ReplicaRejectCode;
 (function(ReplicaRejectCode2) {
   ReplicaRejectCode2[ReplicaRejectCode2["SysFatal"] = 1] = "SysFatal";
@@ -790,7 +790,7 @@ function split(lst, le2 = false) {
   }
   return [Ah, Al];
 }
-const shrSH = (h2, _l, s2) => h2 >>> s2;
+const shrSH = (h2, _l2, s2) => h2 >>> s2;
 const shrSL = (h2, l, s2) => h2 << 32 - s2 | l >>> s2;
 const rotrSH = (h2, l, s2) => h2 >>> s2 | l << 32 - s2;
 const rotrSL = (h2, l, s2) => h2 << 32 - s2 | l >>> s2;
@@ -9770,7 +9770,7 @@ const _HttpAgent = class _HttpAgent {
     }
     transformedRequest = await id2.transformRequest(transformedRequest);
     const body = encode$1(transformedRequest.body);
-    const backoff = __privateGet(this, _backoffStrategy).call(this);
+    const backoff2 = __privateGet(this, _backoffStrategy).call(this);
     const requestId = requestIdOf(submit);
     try {
       const requestSync = () => {
@@ -9792,7 +9792,7 @@ const _HttpAgent = class _HttpAgent {
       const requestFn = callSync ? requestSync : requestAsync;
       const { responseBodyBytes, ...response } = await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, {
         requestFn,
-        backoff,
+        backoff: backoff2,
         tries: 0
       });
       const responseBody = responseBodyBytes.byteLength > 0 ? decode$1(responseBodyBytes) : null;
@@ -9834,7 +9834,7 @@ const _HttpAgent = class _HttpAgent {
     }
   }
   async query(canisterId, fields, identity) {
-    const backoff = __privateGet(this, _backoffStrategy).call(this);
+    const backoff2 = __privateGet(this, _backoffStrategy).call(this);
     const ecid = fields.effectiveCanisterId ? Principal$1.from(fields.effectiveCanisterId) : Principal$1.from(canisterId);
     await __privateMethod(this, _HttpAgent_instances, asyncGuard_fn).call(this, ecid);
     this.log.print(`ecid ${ecid.toString()}`);
@@ -9875,7 +9875,7 @@ const _HttpAgent = class _HttpAgent {
       transformedRequest,
       body,
       requestId,
-      backoff,
+      backoff: backoff2,
       tries: 0
     };
     const makeQuery = async () => {
@@ -9978,7 +9978,7 @@ const _HttpAgent = class _HttpAgent {
       transformedRequest = await this.createReadStateRequest(fields, identity);
     }
     this.log.print(`fetching "/api/v2/canister/${canister}/read_state" with request:`, transformedRequest);
-    const backoff = __privateGet(this, _backoffStrategy).call(this);
+    const backoff2 = __privateGet(this, _backoffStrategy).call(this);
     try {
       const { responseBodyBytes } = await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, {
         requestFn: () => __privateGet(this, _fetch).call(this, "" + new URL(`/api/v2/canister/${canister.toString()}/read_state`, this.host), {
@@ -9986,7 +9986,7 @@ const _HttpAgent = class _HttpAgent {
           ...transformedRequest.request,
           body: encode$1(transformedRequest.body)
         }),
-        backoff,
+        backoff: backoff2,
         tries: 0
       });
       const decodedResponse = decode$1(responseBodyBytes);
@@ -10094,9 +10094,9 @@ const _HttpAgent = class _HttpAgent {
       Authorization: "Basic " + btoa(__privateGet(this, _credentials))
     } : {};
     this.log.print(`fetching "/api/v2/status"`);
-    const backoff = __privateGet(this, _backoffStrategy).call(this);
+    const backoff2 = __privateGet(this, _backoffStrategy).call(this);
     const { responseBodyBytes } = await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, {
-      backoff,
+      backoff: backoff2,
       requestFn: () => __privateGet(this, _fetch).call(this, "" + new URL(`/api/v2/status`, this.host), { headers, ...__privateGet(this, _fetchOptions) }),
       tries: 0
     });
@@ -10186,11 +10186,11 @@ _subnetKeys = new WeakMap();
 _verifyQuerySignatures = new WeakMap();
 requestAndRetryQuery_fn = async function(args) {
   var _a3, _b3;
-  const { ecid, transformedRequest, body, requestId, backoff, tries } = args;
-  const delay2 = tries === 0 ? 0 : backoff.next();
+  const { ecid, transformedRequest, body, requestId, backoff: backoff2, tries } = args;
+  const delay2 = tries === 0 ? 0 : backoff2.next();
   this.log.print(`fetching "/api/v2/canister/${ecid.toString()}/query" with tries:`, {
     tries,
-    backoff,
+    backoff: backoff2,
     delay: delay2
   });
   if (delay2 === null) {
@@ -10256,8 +10256,8 @@ requestAndRetryQuery_fn = async function(args) {
   return response;
 };
 requestAndRetry_fn = async function(args) {
-  const { requestFn, backoff, tries } = args;
-  const delay2 = tries === 0 ? 0 : backoff.next();
+  const { requestFn, backoff: backoff2, tries } = args;
+  const delay2 = tries === 0 ? 0 : backoff2.next();
   if (delay2 === null) {
     throw ProtocolError.fromCode(new TimeoutWaitingForResponseErrorCode(`Retry strategy exhausted after ${tries} attempts.`));
   }
@@ -10276,7 +10276,7 @@ requestAndRetry_fn = async function(args) {
       this.log.warn(`Caught exception while attempting to make request:
   ${error}
   Retrying request.`);
-      return await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, { requestFn, backoff, tries: tries + 1 });
+      return await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, { requestFn, backoff: backoff2, tries: tries + 1 });
     }
     throw TransportError.fromCode(new HttpFetchErrorCode(error));
   }
@@ -10299,7 +10299,7 @@ requestAndRetry_fn = async function(args) {
     throw InputError.fromCode(new IngressExpiryInvalidErrorCode(responseText, __privateGet(this, _maxIngressExpiryInMinutes)));
   }
   if (tries < __privateGet(this, _retryTimes)) {
-    return await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, { requestFn, backoff, tries: tries + 1 });
+    return await __privateMethod(this, _HttpAgent_instances, requestAndRetry_fn).call(this, { requestFn, backoff: backoff2, tries: tries + 1 });
   }
   throw ProtocolError.fromCode(new HttpErrorCode(response.status, response.statusText, headers, responseText));
 };
@@ -10325,6 +10325,442 @@ let HttpAgent = _HttpAgent;
 function calculateIngressExpiry(maxIngressExpiryInMinutes, timeDiffMsecs) {
   const ingressExpiryMs = maxIngressExpiryInMinutes * MINUTE_TO_MSECS;
   return Expiry.fromDeltaInMilliseconds(ingressExpiryMs, timeDiffMsecs);
+}
+const FIVE_MINUTES_IN_MSEC = 5 * 60 * 1e3;
+function defaultStrategy() {
+  return chain(conditionalDelay(once(), 1e3), backoff(1e3, 1.2), timeout(FIVE_MINUTES_IN_MSEC));
+}
+function once() {
+  let first = true;
+  return async () => {
+    if (first) {
+      first = false;
+      return true;
+    }
+    return false;
+  };
+}
+function conditionalDelay(condition, timeInMsec) {
+  return async (canisterId, requestId, status) => {
+    if (await condition(canisterId, requestId, status)) {
+      return new Promise((resolve) => setTimeout(resolve, timeInMsec));
+    }
+  };
+}
+function timeout(timeInMsec) {
+  const end = Date.now() + timeInMsec;
+  return async (_canisterId, requestId, status) => {
+    if (Date.now() > end) {
+      throw ProtocolError.fromCode(new TimeoutWaitingForResponseErrorCode(`Request timed out after ${timeInMsec} msec`, requestId, status));
+    }
+  };
+}
+function backoff(startingThrottleInMsec, backoffFactor) {
+  let currentThrottling = startingThrottleInMsec;
+  return () => new Promise((resolve) => setTimeout(() => {
+    currentThrottling *= backoffFactor;
+    resolve();
+  }, currentThrottling));
+}
+function chain(...strategies) {
+  return async (canisterId, requestId, status) => {
+    for (const a2 of strategies) {
+      await a2(canisterId, requestId, status);
+    }
+  };
+}
+const DEFAULT_POLLING_OPTIONS = {
+  preSignReadStateRequest: false
+};
+function hasProperty(value, property) {
+  return Object.prototype.hasOwnProperty.call(value, property);
+}
+function isObjectWithProperty(value, property) {
+  return value !== null && typeof value === "object" && hasProperty(value, property);
+}
+function hasFunction(value, property) {
+  return hasProperty(value, property) && typeof value[property] === "function";
+}
+function isSignedReadStateRequestWithExpiry(value) {
+  return isObjectWithProperty(value, "body") && isObjectWithProperty(value.body, "content") && value.body.content.request_type === ReadRequestType.ReadState && isObjectWithProperty(value.body.content, "ingress_expiry") && typeof value.body.content.ingress_expiry === "object" && value.body.content.ingress_expiry !== null && hasFunction(value.body.content.ingress_expiry, "toHash");
+}
+async function pollForResponse(agent, canisterId, requestId, options = {}) {
+  const path = [utf8ToBytes("request_status"), requestId];
+  let state;
+  let currentRequest;
+  const preSignReadStateRequest = options.preSignReadStateRequest ?? false;
+  if (preSignReadStateRequest) {
+    currentRequest = await constructRequest({
+      paths: [path],
+      agent,
+      pollingOptions: options
+    });
+    state = await agent.readState(canisterId, { paths: [path] }, void 0, currentRequest);
+  } else {
+    state = await agent.readState(canisterId, { paths: [path] });
+  }
+  if (agent.rootKey == null) {
+    throw ExternalError.fromCode(new MissingRootKeyErrorCode());
+  }
+  const cert = await Certificate.create({
+    certificate: state.certificate,
+    rootKey: agent.rootKey,
+    canisterId,
+    blsVerify: options.blsVerify,
+    agent
+  });
+  const maybeBuf = lookupResultToBuffer(cert.lookup_path([...path, utf8ToBytes("status")]));
+  let status;
+  if (typeof maybeBuf === "undefined") {
+    status = RequestStatusResponseStatus.Unknown;
+  } else {
+    status = new TextDecoder().decode(maybeBuf);
+  }
+  switch (status) {
+    case RequestStatusResponseStatus.Replied: {
+      return {
+        reply: lookupResultToBuffer(cert.lookup_path([...path, "reply"])),
+        certificate: cert
+      };
+    }
+    case RequestStatusResponseStatus.Received:
+    case RequestStatusResponseStatus.Unknown:
+    case RequestStatusResponseStatus.Processing: {
+      const strategy = options.strategy ?? defaultStrategy();
+      await strategy(canisterId, requestId, status);
+      return pollForResponse(agent, canisterId, requestId, {
+        ...options,
+        // Pass over either the strategy already provided or the new one created above
+        strategy,
+        request: currentRequest
+      });
+    }
+    case RequestStatusResponseStatus.Rejected: {
+      const rejectCode = new Uint8Array(lookupResultToBuffer(cert.lookup_path([...path, "reject_code"])))[0];
+      const rejectMessage = new TextDecoder().decode(lookupResultToBuffer(cert.lookup_path([...path, "reject_message"])));
+      const errorCodeBuf = lookupResultToBuffer(cert.lookup_path([...path, "error_code"]));
+      const errorCode = errorCodeBuf ? new TextDecoder().decode(errorCodeBuf) : void 0;
+      throw RejectError.fromCode(new CertifiedRejectErrorCode(requestId, rejectCode, rejectMessage, errorCode));
+    }
+    case RequestStatusResponseStatus.Done:
+      throw UnknownError.fromCode(new RequestStatusDoneNoReplyErrorCode(requestId));
+  }
+  throw UNREACHABLE_ERROR;
+}
+async function constructRequest(options) {
+  var _a3;
+  const { paths, agent, pollingOptions } = options;
+  if (pollingOptions.request && isSignedReadStateRequestWithExpiry(pollingOptions.request)) {
+    return pollingOptions.request;
+  }
+  const request2 = await ((_a3 = agent.createReadStateRequest) == null ? void 0 : _a3.call(agent, {
+    paths
+  }, void 0));
+  if (!isSignedReadStateRequestWithExpiry(request2)) {
+    throw InputError.fromCode(new InvalidReadStateRequestErrorCode(request2));
+  }
+  return request2;
+}
+const metadataSymbol = Symbol.for("ic-agent-metadata");
+class Actor {
+  /**
+   * Get the Agent class this Actor would call, or undefined if the Actor would use
+   * the default agent (global.ic.agent).
+   * @param actor The actor to get the agent of.
+   */
+  static agentOf(actor) {
+    return actor[metadataSymbol].config.agent;
+  }
+  /**
+   * Get the interface of an actor, in the form of an instance of a Service.
+   * @param actor The actor to get the interface of.
+   */
+  static interfaceOf(actor) {
+    return actor[metadataSymbol].service;
+  }
+  static canisterIdOf(actor) {
+    return Principal$1.from(actor[metadataSymbol].config.canisterId);
+  }
+  static createActorClass(interfaceFactory, options) {
+    const service = interfaceFactory({ IDL });
+    class CanisterActor extends Actor {
+      constructor(config) {
+        if (!config.canisterId) {
+          throw InputError.fromCode(new MissingCanisterIdErrorCode(config.canisterId));
+        }
+        const canisterId = typeof config.canisterId === "string" ? Principal$1.fromText(config.canisterId) : config.canisterId;
+        super({
+          config: {
+            ...DEFAULT_ACTOR_CONFIG,
+            ...config,
+            canisterId
+          },
+          service
+        });
+        for (const [methodName, func] of service._fields) {
+          if (options == null ? void 0 : options.httpDetails) {
+            func.annotations.push(ACTOR_METHOD_WITH_HTTP_DETAILS);
+          }
+          if (options == null ? void 0 : options.certificate) {
+            func.annotations.push(ACTOR_METHOD_WITH_CERTIFICATE);
+          }
+          this[methodName] = _createActorMethod(this, methodName, func, config.blsVerify);
+        }
+      }
+    }
+    return CanisterActor;
+  }
+  /**
+   * Creates an actor with the given interface factory and configuration.
+   *
+   * The [`@icp-sdk/bindgen`](https://js.icp.build/bindgen/) package can be used to generate the interface factory for your canister.
+   * @param interfaceFactory - the interface factory for the actor, typically generated by the [`@icp-sdk/bindgen`](https://js.icp.build/bindgen/) package
+   * @param configuration - the configuration for the actor
+   * @returns an actor with the given interface factory and configuration
+   * @example
+   * Using the interface factory generated by the [`@icp-sdk/bindgen`](https://js.icp.build/bindgen/) package:
+   * ```ts
+   * import { Actor, HttpAgent } from '@icp-sdk/core/agent';
+   * import { Principal } from '@icp-sdk/core/principal';
+   * import { idlFactory } from './api/declarations/hello-world.did';
+   *
+   * const canisterId = Principal.fromText('rrkah-fqaaa-aaaaa-aaaaq-cai');
+   *
+   * const agent = await HttpAgent.create({
+   *   host: 'https://icp-api.io',
+   * });
+   *
+   * const actor = Actor.createActor(idlFactory, {
+   *   agent,
+   *   canisterId,
+   * });
+   *
+   * const response = await actor.greet('world');
+   * console.log(response);
+   * ```
+   * @example
+   * Using the `createActor` wrapper function generated by the [`@icp-sdk/bindgen`](https://js.icp.build/bindgen/) package:
+   * ```ts
+   * import { HttpAgent } from '@icp-sdk/core/agent';
+   * import { Principal } from '@icp-sdk/core/principal';
+   * import { createActor } from './api/hello-world';
+   *
+   * const canisterId = Principal.fromText('rrkah-fqaaa-aaaaa-aaaaq-cai');
+   *
+   * const agent = await HttpAgent.create({
+   *   host: 'https://icp-api.io',
+   * });
+   *
+   * const actor = createActor(canisterId, {
+   *   agent,
+   * });
+   *
+   * const response = await actor.greet('world');
+   * console.log(response);
+   * ```
+   */
+  static createActor(interfaceFactory, configuration) {
+    if (!configuration.canisterId) {
+      throw InputError.fromCode(new MissingCanisterIdErrorCode(configuration.canisterId));
+    }
+    return new (this.createActorClass(interfaceFactory))(configuration);
+  }
+  /**
+   * Returns an actor with methods that return the http response details along with the result
+   * @param interfaceFactory - the interface factory for the actor
+   * @param configuration - the configuration for the actor
+   * @deprecated - use createActor with actorClassOptions instead
+   */
+  static createActorWithHttpDetails(interfaceFactory, configuration) {
+    return new (this.createActorClass(interfaceFactory, { httpDetails: true }))(configuration);
+  }
+  /**
+   * Returns an actor with methods that return the http response details along with the result
+   * @param interfaceFactory - the interface factory for the actor
+   * @param configuration - the configuration for the actor
+   * @param actorClassOptions - options for the actor class extended details to return with the result
+   */
+  static createActorWithExtendedDetails(interfaceFactory, configuration, actorClassOptions = {
+    httpDetails: true,
+    certificate: true
+  }) {
+    return new (this.createActorClass(interfaceFactory, actorClassOptions))(configuration);
+  }
+  constructor(metadata) {
+    this[metadataSymbol] = Object.freeze(metadata);
+  }
+}
+function decodeReturnValue(types, msg) {
+  const returnValues = decode$2(types, msg);
+  switch (returnValues.length) {
+    case 0:
+      return void 0;
+    case 1:
+      return returnValues[0];
+    default:
+      return returnValues;
+  }
+}
+const DEFAULT_ACTOR_CONFIG = {
+  pollingOptions: DEFAULT_POLLING_OPTIONS
+};
+const ACTOR_METHOD_WITH_HTTP_DETAILS = "http-details";
+const ACTOR_METHOD_WITH_CERTIFICATE = "certificate";
+function _createActorMethod(actor, methodName, func, blsVerify2) {
+  let caller;
+  if (func.annotations.includes("query") || func.annotations.includes("composite_query")) {
+    caller = async (options, ...args) => {
+      var _a3, _b3;
+      options = {
+        ...options,
+        ...(_b3 = (_a3 = actor[metadataSymbol].config).queryTransform) == null ? void 0 : _b3.call(_a3, methodName, args, {
+          ...actor[metadataSymbol].config,
+          ...options
+        })
+      };
+      const agent = options.agent || actor[metadataSymbol].config.agent || new HttpAgent();
+      const cid = Principal$1.from(options.canisterId || actor[metadataSymbol].config.canisterId);
+      const arg = encode$2(func.argTypes, args);
+      const result = await agent.query(cid, {
+        methodName,
+        arg,
+        effectiveCanisterId: options.effectiveCanisterId
+      });
+      const httpDetails = {
+        ...result.httpDetails,
+        requestDetails: result.requestDetails
+      };
+      switch (result.status) {
+        case QueryResponseStatus.Rejected: {
+          const uncertifiedRejectErrorCode = new UncertifiedRejectErrorCode(result.requestId, result.reject_code, result.reject_message, result.error_code, result.signatures);
+          uncertifiedRejectErrorCode.callContext = {
+            canisterId: cid,
+            methodName,
+            httpDetails
+          };
+          throw RejectError.fromCode(uncertifiedRejectErrorCode);
+        }
+        case QueryResponseStatus.Replied:
+          return func.annotations.includes(ACTOR_METHOD_WITH_HTTP_DETAILS) ? {
+            httpDetails,
+            result: decodeReturnValue(func.retTypes, result.reply.arg)
+          } : decodeReturnValue(func.retTypes, result.reply.arg);
+      }
+    };
+  } else {
+    caller = async (options, ...args) => {
+      var _a3, _b3;
+      options = {
+        ...options,
+        ...(_b3 = (_a3 = actor[metadataSymbol].config).callTransform) == null ? void 0 : _b3.call(_a3, methodName, args, {
+          ...actor[metadataSymbol].config,
+          ...options
+        })
+      };
+      const agent = options.agent || actor[metadataSymbol].config.agent || HttpAgent.createSync();
+      const { canisterId, effectiveCanisterId, pollingOptions } = {
+        ...DEFAULT_ACTOR_CONFIG,
+        ...actor[metadataSymbol].config,
+        ...options
+      };
+      const cid = Principal$1.from(canisterId);
+      const ecid = effectiveCanisterId !== void 0 ? Principal$1.from(effectiveCanisterId) : cid;
+      const arg = encode$2(func.argTypes, args);
+      const { requestId, response, requestDetails } = await agent.call(cid, {
+        methodName,
+        arg,
+        effectiveCanisterId: ecid,
+        nonce: options.nonce
+      });
+      let reply;
+      let certificate;
+      if (isV3ResponseBody(response.body)) {
+        if (agent.rootKey == null) {
+          throw ExternalError.fromCode(new MissingRootKeyErrorCode());
+        }
+        const cert = response.body.certificate;
+        certificate = await Certificate.create({
+          certificate: cert,
+          rootKey: agent.rootKey,
+          canisterId: ecid,
+          blsVerify: blsVerify2,
+          agent
+        });
+        const path = [utf8ToBytes("request_status"), requestId];
+        const status = new TextDecoder().decode(lookupResultToBuffer(certificate.lookup_path([...path, "status"])));
+        switch (status) {
+          case "replied":
+            reply = lookupResultToBuffer(certificate.lookup_path([...path, "reply"]));
+            break;
+          case "rejected": {
+            const rejectCode = new Uint8Array(lookupResultToBuffer(certificate.lookup_path([...path, "reject_code"])))[0];
+            const rejectMessage = new TextDecoder().decode(lookupResultToBuffer(certificate.lookup_path([...path, "reject_message"])));
+            const error_code_buf = lookupResultToBuffer(certificate.lookup_path([...path, "error_code"]));
+            const error_code = error_code_buf ? new TextDecoder().decode(error_code_buf) : void 0;
+            const certifiedRejectErrorCode = new CertifiedRejectErrorCode(requestId, rejectCode, rejectMessage, error_code);
+            certifiedRejectErrorCode.callContext = {
+              canisterId: cid,
+              methodName,
+              httpDetails: response
+            };
+            throw RejectError.fromCode(certifiedRejectErrorCode);
+          }
+        }
+      } else if (isV2ResponseBody(response.body)) {
+        const { reject_code, reject_message, error_code } = response.body;
+        const errorCode = new UncertifiedRejectUpdateErrorCode(requestId, reject_code, reject_message, error_code);
+        errorCode.callContext = {
+          canisterId: cid,
+          methodName,
+          httpDetails: response
+        };
+        throw RejectError.fromCode(errorCode);
+      }
+      if (response.status === 202) {
+        const pollOptions = {
+          ...pollingOptions,
+          blsVerify: blsVerify2
+        };
+        const response2 = await pollForResponse(agent, ecid, requestId, pollOptions);
+        certificate = response2.certificate;
+        reply = response2.reply;
+      }
+      const shouldIncludeHttpDetails = func.annotations.includes(ACTOR_METHOD_WITH_HTTP_DETAILS);
+      const shouldIncludeCertificate = func.annotations.includes(ACTOR_METHOD_WITH_CERTIFICATE);
+      const httpDetails = { ...response, requestDetails };
+      if (reply !== void 0) {
+        if (shouldIncludeHttpDetails && shouldIncludeCertificate) {
+          return {
+            httpDetails,
+            certificate,
+            result: decodeReturnValue(func.retTypes, reply)
+          };
+        } else if (shouldIncludeCertificate) {
+          return {
+            certificate,
+            result: decodeReturnValue(func.retTypes, reply)
+          };
+        } else if (shouldIncludeHttpDetails) {
+          return {
+            httpDetails,
+            result: decodeReturnValue(func.retTypes, reply)
+          };
+        }
+        return decodeReturnValue(func.retTypes, reply);
+      } else {
+        const errorCode = new UnexpectedErrorCode(`Call was returned undefined. We cannot determine if the call was successful or not. Return types: [${func.retTypes.map((t) => t.display()).join(",")}].`);
+        errorCode.callContext = {
+          canisterId: cid,
+          methodName,
+          httpDetails
+        };
+        throw UnknownError.fromCode(errorCode);
+      }
+    };
+  }
+  const handler = (...args) => caller({}, ...args);
+  handler.withOptions = (options) => (...args) => caller(options, ...args);
+  return handler;
 }
 const MAXIMUM_CONCURRENT_UPLOADS = 10;
 const MAX_RETRIES = 3;
@@ -10766,7 +11202,7 @@ async function maybeLoadMockBackend() {
     return null;
   }
 }
-async function createActorWithConfig(createActor, options) {
+async function createActorWithConfig(createActor2, options) {
   var _a3;
   const mock = await maybeLoadMockBackend();
   if (mock) {
@@ -10799,9 +11235,9 @@ async function createActorWithConfig(createActor, options) {
     const hashWithPrefix = new TextDecoder().decode(new Uint8Array(bytes));
     const hash = hashWithPrefix.substring(MOTOKO_DEDUPLICATION_SENTINEL.length);
     const url = await storageClient.getDirectURL(hash);
-    return ExternalBlob.fromURL(url);
+    return ExternalBlob$2.fromURL(url);
   };
-  return createActor(config.backend_canister_id, uploadFile, downloadFile, actorOptions);
+  return createActor2(config.backend_canister_id, uploadFile, downloadFile, actorOptions);
 }
 var Subscribable = class {
   constructor() {
@@ -11108,9 +11544,9 @@ function isPlainObject$1(o2) {
 function hasObjectPrototype$1(o2) {
   return Object.prototype.toString.call(o2) === "[object Object]";
 }
-function sleep(timeout) {
+function sleep(timeout2) {
   return new Promise((resolve) => {
-    timeoutManager.setTimeout(resolve, timeout);
+    timeoutManager.setTimeout(resolve, timeout2);
   });
 }
 function replaceData(prevData, data, options) {
@@ -11658,7 +12094,7 @@ var Query = (_f = class extends Removable {
     }
   }
   async fetch(options, fetchOptions) {
-    var _a3, _b3, _c2, _d2, _e2, _f2, _g2, _h2, _i2, _j2, _k, _l;
+    var _a3, _b3, _c2, _d2, _e2, _f2, _g2, _h2, _i2, _j2, _k2, _l2;
     if (this.state.fetchStatus !== "idle" && // If the promise in the retryer is already rejected, we have to definitely
     // re-start the fetch; there is a chance that the query is still in a
     // pending state when that happens
@@ -11790,8 +12226,8 @@ var Query = (_f = class extends Removable {
         error,
         this
       );
-      (_l = (_k = __privateGet(this, _cache).config).onSettled) == null ? void 0 : _l.call(
-        _k,
+      (_l2 = (_k2 = __privateGet(this, _cache).config).onSettled) == null ? void 0 : _l2.call(
+        _k2,
         this.state.data,
         error,
         this
@@ -11915,6 +12351,450 @@ function getDefaultState$1(options) {
     fetchStatus: "idle"
   };
 }
+var QueryObserver = (_g = class extends Subscribable {
+  constructor(client2, options) {
+    super();
+    __privateAdd(this, _QueryObserver_instances);
+    __privateAdd(this, _client2);
+    __privateAdd(this, _currentQuery);
+    __privateAdd(this, _currentQueryInitialState);
+    __privateAdd(this, _currentResult);
+    __privateAdd(this, _currentResultState);
+    __privateAdd(this, _currentResultOptions);
+    __privateAdd(this, _currentThenable);
+    __privateAdd(this, _selectError);
+    __privateAdd(this, _selectFn);
+    __privateAdd(this, _selectResult);
+    // This property keeps track of the last query with defined data.
+    // It will be used to pass the previous data and query to the placeholder function between renders.
+    __privateAdd(this, _lastQueryWithDefinedData);
+    __privateAdd(this, _staleTimeoutId);
+    __privateAdd(this, _refetchIntervalId);
+    __privateAdd(this, _currentRefetchInterval);
+    __privateAdd(this, _trackedProps, /* @__PURE__ */ new Set());
+    this.options = options;
+    __privateSet(this, _client2, client2);
+    __privateSet(this, _selectError, null);
+    __privateSet(this, _currentThenable, pendingThenable());
+    this.bindMethods();
+    this.setOptions(options);
+  }
+  bindMethods() {
+    this.refetch = this.refetch.bind(this);
+  }
+  onSubscribe() {
+    if (this.listeners.size === 1) {
+      __privateGet(this, _currentQuery).addObserver(this);
+      if (shouldFetchOnMount(__privateGet(this, _currentQuery), this.options)) {
+        __privateMethod(this, _QueryObserver_instances, executeFetch_fn).call(this);
+      } else {
+        this.updateResult();
+      }
+      __privateMethod(this, _QueryObserver_instances, updateTimers_fn).call(this);
+    }
+  }
+  onUnsubscribe() {
+    if (!this.hasListeners()) {
+      this.destroy();
+    }
+  }
+  shouldFetchOnReconnect() {
+    return shouldFetchOn(
+      __privateGet(this, _currentQuery),
+      this.options,
+      this.options.refetchOnReconnect
+    );
+  }
+  shouldFetchOnWindowFocus() {
+    return shouldFetchOn(
+      __privateGet(this, _currentQuery),
+      this.options,
+      this.options.refetchOnWindowFocus
+    );
+  }
+  destroy() {
+    this.listeners = /* @__PURE__ */ new Set();
+    __privateMethod(this, _QueryObserver_instances, clearStaleTimeout_fn).call(this);
+    __privateMethod(this, _QueryObserver_instances, clearRefetchInterval_fn).call(this);
+    __privateGet(this, _currentQuery).removeObserver(this);
+  }
+  setOptions(options) {
+    const prevOptions = this.options;
+    const prevQuery = __privateGet(this, _currentQuery);
+    this.options = __privateGet(this, _client2).defaultQueryOptions(options);
+    if (this.options.enabled !== void 0 && typeof this.options.enabled !== "boolean" && typeof this.options.enabled !== "function" && typeof resolveEnabled(this.options.enabled, __privateGet(this, _currentQuery)) !== "boolean") {
+      throw new Error(
+        "Expected enabled to be a boolean or a callback that returns a boolean"
+      );
+    }
+    __privateMethod(this, _QueryObserver_instances, updateQuery_fn).call(this);
+    __privateGet(this, _currentQuery).setOptions(this.options);
+    if (prevOptions._defaulted && !shallowEqualObjects(this.options, prevOptions)) {
+      __privateGet(this, _client2).getQueryCache().notify({
+        type: "observerOptionsUpdated",
+        query: __privateGet(this, _currentQuery),
+        observer: this
+      });
+    }
+    const mounted = this.hasListeners();
+    if (mounted && shouldFetchOptionally(
+      __privateGet(this, _currentQuery),
+      prevQuery,
+      this.options,
+      prevOptions
+    )) {
+      __privateMethod(this, _QueryObserver_instances, executeFetch_fn).call(this);
+    }
+    this.updateResult();
+    if (mounted && (__privateGet(this, _currentQuery) !== prevQuery || resolveEnabled(this.options.enabled, __privateGet(this, _currentQuery)) !== resolveEnabled(prevOptions.enabled, __privateGet(this, _currentQuery)) || resolveStaleTime(this.options.staleTime, __privateGet(this, _currentQuery)) !== resolveStaleTime(prevOptions.staleTime, __privateGet(this, _currentQuery)))) {
+      __privateMethod(this, _QueryObserver_instances, updateStaleTimeout_fn).call(this);
+    }
+    const nextRefetchInterval = __privateMethod(this, _QueryObserver_instances, computeRefetchInterval_fn).call(this);
+    if (mounted && (__privateGet(this, _currentQuery) !== prevQuery || resolveEnabled(this.options.enabled, __privateGet(this, _currentQuery)) !== resolveEnabled(prevOptions.enabled, __privateGet(this, _currentQuery)) || nextRefetchInterval !== __privateGet(this, _currentRefetchInterval))) {
+      __privateMethod(this, _QueryObserver_instances, updateRefetchInterval_fn).call(this, nextRefetchInterval);
+    }
+  }
+  getOptimisticResult(options) {
+    const query = __privateGet(this, _client2).getQueryCache().build(__privateGet(this, _client2), options);
+    const result = this.createResult(query, options);
+    if (shouldAssignObserverCurrentProperties(this, result)) {
+      __privateSet(this, _currentResult, result);
+      __privateSet(this, _currentResultOptions, this.options);
+      __privateSet(this, _currentResultState, __privateGet(this, _currentQuery).state);
+    }
+    return result;
+  }
+  getCurrentResult() {
+    return __privateGet(this, _currentResult);
+  }
+  trackResult(result, onPropTracked) {
+    return new Proxy(result, {
+      get: (target, key) => {
+        this.trackProp(key);
+        onPropTracked == null ? void 0 : onPropTracked(key);
+        if (key === "promise") {
+          this.trackProp("data");
+          if (!this.options.experimental_prefetchInRender && __privateGet(this, _currentThenable).status === "pending") {
+            __privateGet(this, _currentThenable).reject(
+              new Error(
+                "experimental_prefetchInRender feature flag is not enabled"
+              )
+            );
+          }
+        }
+        return Reflect.get(target, key);
+      }
+    });
+  }
+  trackProp(key) {
+    __privateGet(this, _trackedProps).add(key);
+  }
+  getCurrentQuery() {
+    return __privateGet(this, _currentQuery);
+  }
+  refetch({ ...options } = {}) {
+    return this.fetch({
+      ...options
+    });
+  }
+  fetchOptimistic(options) {
+    const defaultedOptions = __privateGet(this, _client2).defaultQueryOptions(options);
+    const query = __privateGet(this, _client2).getQueryCache().build(__privateGet(this, _client2), defaultedOptions);
+    return query.fetch().then(() => this.createResult(query, defaultedOptions));
+  }
+  fetch(fetchOptions) {
+    return __privateMethod(this, _QueryObserver_instances, executeFetch_fn).call(this, {
+      ...fetchOptions,
+      cancelRefetch: fetchOptions.cancelRefetch ?? true
+    }).then(() => {
+      this.updateResult();
+      return __privateGet(this, _currentResult);
+    });
+  }
+  createResult(query, options) {
+    var _a3;
+    const prevQuery = __privateGet(this, _currentQuery);
+    const prevOptions = this.options;
+    const prevResult = __privateGet(this, _currentResult);
+    const prevResultState = __privateGet(this, _currentResultState);
+    const prevResultOptions = __privateGet(this, _currentResultOptions);
+    const queryChange = query !== prevQuery;
+    const queryInitialState = queryChange ? query.state : __privateGet(this, _currentQueryInitialState);
+    const { state } = query;
+    let newState = { ...state };
+    let isPlaceholderData = false;
+    let data;
+    if (options._optimisticResults) {
+      const mounted = this.hasListeners();
+      const fetchOnMount = !mounted && shouldFetchOnMount(query, options);
+      const fetchOptionally = mounted && shouldFetchOptionally(query, prevQuery, options, prevOptions);
+      if (fetchOnMount || fetchOptionally) {
+        newState = {
+          ...newState,
+          ...fetchState(state.data, query.options)
+        };
+      }
+      if (options._optimisticResults === "isRestoring") {
+        newState.fetchStatus = "idle";
+      }
+    }
+    let { error, errorUpdatedAt, status } = newState;
+    data = newState.data;
+    let skipSelect = false;
+    if (options.placeholderData !== void 0 && data === void 0 && status === "pending") {
+      let placeholderData;
+      if ((prevResult == null ? void 0 : prevResult.isPlaceholderData) && options.placeholderData === (prevResultOptions == null ? void 0 : prevResultOptions.placeholderData)) {
+        placeholderData = prevResult.data;
+        skipSelect = true;
+      } else {
+        placeholderData = typeof options.placeholderData === "function" ? options.placeholderData(
+          (_a3 = __privateGet(this, _lastQueryWithDefinedData)) == null ? void 0 : _a3.state.data,
+          __privateGet(this, _lastQueryWithDefinedData)
+        ) : options.placeholderData;
+      }
+      if (placeholderData !== void 0) {
+        status = "success";
+        data = replaceData(
+          prevResult == null ? void 0 : prevResult.data,
+          placeholderData,
+          options
+        );
+        isPlaceholderData = true;
+      }
+    }
+    if (options.select && data !== void 0 && !skipSelect) {
+      if (prevResult && data === (prevResultState == null ? void 0 : prevResultState.data) && options.select === __privateGet(this, _selectFn)) {
+        data = __privateGet(this, _selectResult);
+      } else {
+        try {
+          __privateSet(this, _selectFn, options.select);
+          data = options.select(data);
+          data = replaceData(prevResult == null ? void 0 : prevResult.data, data, options);
+          __privateSet(this, _selectResult, data);
+          __privateSet(this, _selectError, null);
+        } catch (selectError) {
+          __privateSet(this, _selectError, selectError);
+        }
+      }
+    }
+    if (__privateGet(this, _selectError)) {
+      error = __privateGet(this, _selectError);
+      data = __privateGet(this, _selectResult);
+      errorUpdatedAt = Date.now();
+      status = "error";
+    }
+    const isFetching = newState.fetchStatus === "fetching";
+    const isPending = status === "pending";
+    const isError = status === "error";
+    const isLoading = isPending && isFetching;
+    const hasData = data !== void 0;
+    const result = {
+      status,
+      fetchStatus: newState.fetchStatus,
+      isPending,
+      isSuccess: status === "success",
+      isError,
+      isInitialLoading: isLoading,
+      isLoading,
+      data,
+      dataUpdatedAt: newState.dataUpdatedAt,
+      error,
+      errorUpdatedAt,
+      failureCount: newState.fetchFailureCount,
+      failureReason: newState.fetchFailureReason,
+      errorUpdateCount: newState.errorUpdateCount,
+      isFetched: query.isFetched(),
+      isFetchedAfterMount: newState.dataUpdateCount > queryInitialState.dataUpdateCount || newState.errorUpdateCount > queryInitialState.errorUpdateCount,
+      isFetching,
+      isRefetching: isFetching && !isPending,
+      isLoadingError: isError && !hasData,
+      isPaused: newState.fetchStatus === "paused",
+      isPlaceholderData,
+      isRefetchError: isError && hasData,
+      isStale: isStale(query, options),
+      refetch: this.refetch,
+      promise: __privateGet(this, _currentThenable),
+      isEnabled: resolveEnabled(options.enabled, query) !== false
+    };
+    const nextResult = result;
+    if (this.options.experimental_prefetchInRender) {
+      const hasResultData = nextResult.data !== void 0;
+      const isErrorWithoutData = nextResult.status === "error" && !hasResultData;
+      const finalizeThenableIfPossible = (thenable) => {
+        if (isErrorWithoutData) {
+          thenable.reject(nextResult.error);
+        } else if (hasResultData) {
+          thenable.resolve(nextResult.data);
+        }
+      };
+      const recreateThenable = () => {
+        const pending = __privateSet(this, _currentThenable, nextResult.promise = pendingThenable());
+        finalizeThenableIfPossible(pending);
+      };
+      const prevThenable = __privateGet(this, _currentThenable);
+      switch (prevThenable.status) {
+        case "pending":
+          if (query.queryHash === prevQuery.queryHash) {
+            finalizeThenableIfPossible(prevThenable);
+          }
+          break;
+        case "fulfilled":
+          if (isErrorWithoutData || nextResult.data !== prevThenable.value) {
+            recreateThenable();
+          }
+          break;
+        case "rejected":
+          if (!isErrorWithoutData || nextResult.error !== prevThenable.reason) {
+            recreateThenable();
+          }
+          break;
+      }
+    }
+    return nextResult;
+  }
+  updateResult() {
+    const prevResult = __privateGet(this, _currentResult);
+    const nextResult = this.createResult(__privateGet(this, _currentQuery), this.options);
+    __privateSet(this, _currentResultState, __privateGet(this, _currentQuery).state);
+    __privateSet(this, _currentResultOptions, this.options);
+    if (__privateGet(this, _currentResultState).data !== void 0) {
+      __privateSet(this, _lastQueryWithDefinedData, __privateGet(this, _currentQuery));
+    }
+    if (shallowEqualObjects(nextResult, prevResult)) {
+      return;
+    }
+    __privateSet(this, _currentResult, nextResult);
+    const shouldNotifyListeners = () => {
+      if (!prevResult) {
+        return true;
+      }
+      const { notifyOnChangeProps } = this.options;
+      const notifyOnChangePropsValue = typeof notifyOnChangeProps === "function" ? notifyOnChangeProps() : notifyOnChangeProps;
+      if (notifyOnChangePropsValue === "all" || !notifyOnChangePropsValue && !__privateGet(this, _trackedProps).size) {
+        return true;
+      }
+      const includedProps = new Set(
+        notifyOnChangePropsValue ?? __privateGet(this, _trackedProps)
+      );
+      if (this.options.throwOnError) {
+        includedProps.add("error");
+      }
+      return Object.keys(__privateGet(this, _currentResult)).some((key) => {
+        const typedKey = key;
+        const changed = __privateGet(this, _currentResult)[typedKey] !== prevResult[typedKey];
+        return changed && includedProps.has(typedKey);
+      });
+    };
+    __privateMethod(this, _QueryObserver_instances, notify_fn).call(this, { listeners: shouldNotifyListeners() });
+  }
+  onQueryUpdate() {
+    this.updateResult();
+    if (this.hasListeners()) {
+      __privateMethod(this, _QueryObserver_instances, updateTimers_fn).call(this);
+    }
+  }
+}, _client2 = new WeakMap(), _currentQuery = new WeakMap(), _currentQueryInitialState = new WeakMap(), _currentResult = new WeakMap(), _currentResultState = new WeakMap(), _currentResultOptions = new WeakMap(), _currentThenable = new WeakMap(), _selectError = new WeakMap(), _selectFn = new WeakMap(), _selectResult = new WeakMap(), _lastQueryWithDefinedData = new WeakMap(), _staleTimeoutId = new WeakMap(), _refetchIntervalId = new WeakMap(), _currentRefetchInterval = new WeakMap(), _trackedProps = new WeakMap(), _QueryObserver_instances = new WeakSet(), executeFetch_fn = function(fetchOptions) {
+  __privateMethod(this, _QueryObserver_instances, updateQuery_fn).call(this);
+  let promise = __privateGet(this, _currentQuery).fetch(
+    this.options,
+    fetchOptions
+  );
+  if (!(fetchOptions == null ? void 0 : fetchOptions.throwOnError)) {
+    promise = promise.catch(noop$7);
+  }
+  return promise;
+}, updateStaleTimeout_fn = function() {
+  __privateMethod(this, _QueryObserver_instances, clearStaleTimeout_fn).call(this);
+  const staleTime = resolveStaleTime(
+    this.options.staleTime,
+    __privateGet(this, _currentQuery)
+  );
+  if (environmentManager.isServer() || __privateGet(this, _currentResult).isStale || !isValidTimeout(staleTime)) {
+    return;
+  }
+  const time2 = timeUntilStale(__privateGet(this, _currentResult).dataUpdatedAt, staleTime);
+  const timeout2 = time2 + 1;
+  __privateSet(this, _staleTimeoutId, timeoutManager.setTimeout(() => {
+    if (!__privateGet(this, _currentResult).isStale) {
+      this.updateResult();
+    }
+  }, timeout2));
+}, computeRefetchInterval_fn = function() {
+  return (typeof this.options.refetchInterval === "function" ? this.options.refetchInterval(__privateGet(this, _currentQuery)) : this.options.refetchInterval) ?? false;
+}, updateRefetchInterval_fn = function(nextInterval) {
+  __privateMethod(this, _QueryObserver_instances, clearRefetchInterval_fn).call(this);
+  __privateSet(this, _currentRefetchInterval, nextInterval);
+  if (environmentManager.isServer() || resolveEnabled(this.options.enabled, __privateGet(this, _currentQuery)) === false || !isValidTimeout(__privateGet(this, _currentRefetchInterval)) || __privateGet(this, _currentRefetchInterval) === 0) {
+    return;
+  }
+  __privateSet(this, _refetchIntervalId, timeoutManager.setInterval(() => {
+    if (this.options.refetchIntervalInBackground || focusManager.isFocused()) {
+      __privateMethod(this, _QueryObserver_instances, executeFetch_fn).call(this);
+    }
+  }, __privateGet(this, _currentRefetchInterval)));
+}, updateTimers_fn = function() {
+  __privateMethod(this, _QueryObserver_instances, updateStaleTimeout_fn).call(this);
+  __privateMethod(this, _QueryObserver_instances, updateRefetchInterval_fn).call(this, __privateMethod(this, _QueryObserver_instances, computeRefetchInterval_fn).call(this));
+}, clearStaleTimeout_fn = function() {
+  if (__privateGet(this, _staleTimeoutId)) {
+    timeoutManager.clearTimeout(__privateGet(this, _staleTimeoutId));
+    __privateSet(this, _staleTimeoutId, void 0);
+  }
+}, clearRefetchInterval_fn = function() {
+  if (__privateGet(this, _refetchIntervalId)) {
+    timeoutManager.clearInterval(__privateGet(this, _refetchIntervalId));
+    __privateSet(this, _refetchIntervalId, void 0);
+  }
+}, updateQuery_fn = function() {
+  const query = __privateGet(this, _client2).getQueryCache().build(__privateGet(this, _client2), this.options);
+  if (query === __privateGet(this, _currentQuery)) {
+    return;
+  }
+  const prevQuery = __privateGet(this, _currentQuery);
+  __privateSet(this, _currentQuery, query);
+  __privateSet(this, _currentQueryInitialState, query.state);
+  if (this.hasListeners()) {
+    prevQuery == null ? void 0 : prevQuery.removeObserver(this);
+    query.addObserver(this);
+  }
+}, notify_fn = function(notifyOptions) {
+  notifyManager.batch(() => {
+    if (notifyOptions.listeners) {
+      this.listeners.forEach((listener) => {
+        listener(__privateGet(this, _currentResult));
+      });
+    }
+    __privateGet(this, _client2).getQueryCache().notify({
+      query: __privateGet(this, _currentQuery),
+      type: "observerResultsUpdated"
+    });
+  });
+}, _g);
+function shouldLoadOnMount(query, options) {
+  return resolveEnabled(options.enabled, query) !== false && query.state.data === void 0 && !(query.state.status === "error" && options.retryOnMount === false);
+}
+function shouldFetchOnMount(query, options) {
+  return shouldLoadOnMount(query, options) || query.state.data !== void 0 && shouldFetchOn(query, options, options.refetchOnMount);
+}
+function shouldFetchOn(query, options, field) {
+  if (resolveEnabled(options.enabled, query) !== false && resolveStaleTime(options.staleTime, query) !== "static") {
+    const value = typeof field === "function" ? field(query) : field;
+    return value === "always" || value !== false && isStale(query, options);
+  }
+  return false;
+}
+function shouldFetchOptionally(query, prevQuery, options, prevOptions) {
+  return (query !== prevQuery || resolveEnabled(prevOptions.enabled, query) === false) && (!options.suspense || query.state.status !== "error") && isStale(query, options);
+}
+function isStale(query, options) {
+  return resolveEnabled(options.enabled, query) !== false && query.isStaleByTime(resolveStaleTime(options.staleTime, query));
+}
+function shouldAssignObserverCurrentProperties(observer2, optimisticResult) {
+  if (!shallowEqualObjects(observer2.getCurrentResult(), optimisticResult)) {
+    return true;
+  }
+  return false;
+}
 function infiniteQueryBehavior(pages) {
   return {
     onFetch: (context, query) => {
@@ -12018,15 +12898,15 @@ function getPreviousPageParam(options, { pages, pageParams }) {
   var _a3;
   return pages.length > 0 ? (_a3 = options.getPreviousPageParam) == null ? void 0 : _a3.call(options, pages[0], pages, pageParams[0], pageParams) : void 0;
 }
-var Mutation = (_g = class extends Removable {
+var Mutation = (_h = class extends Removable {
   constructor(config) {
     super();
     __privateAdd(this, _Mutation_instances);
-    __privateAdd(this, _client2);
+    __privateAdd(this, _client3);
     __privateAdd(this, _observers);
     __privateAdd(this, _mutationCache);
     __privateAdd(this, _retryer2);
-    __privateSet(this, _client2, config.client);
+    __privateSet(this, _client3, config.client);
     this.mutationId = config.mutationId;
     __privateSet(this, _mutationCache, config.mutationCache);
     __privateSet(this, _observers, []);
@@ -12076,12 +12956,12 @@ var Mutation = (_g = class extends Removable {
     this.execute(this.state.variables);
   }
   async execute(variables) {
-    var _a3, _b3, _c2, _d2, _e2, _f2, _g2, _h2, _i2, _j2, _k, _l, _m, _n, _o, _p, _q, _r;
+    var _a3, _b3, _c2, _d2, _e2, _f2, _g2, _h2, _i2, _j2, _k2, _l2, _m, _n, _o, _p, _q, _r;
     const onContinue = () => {
       __privateMethod(this, _Mutation_instances, dispatch_fn2).call(this, { type: "continue" });
     };
     const mutationFnContext = {
-      client: __privateGet(this, _client2),
+      client: __privateGet(this, _client3),
       meta: this.options.meta,
       mutationKey: this.options.mutationKey
     };
@@ -12169,8 +13049,8 @@ var Mutation = (_g = class extends Removable {
       return data;
     } catch (error) {
       try {
-        await ((_l = (_k = __privateGet(this, _mutationCache).config).onError) == null ? void 0 : _l.call(
-          _k,
+        await ((_l2 = (_k2 = __privateGet(this, _mutationCache).config).onError) == null ? void 0 : _l2.call(
+          _k2,
           error,
           variables,
           this.state.context,
@@ -12222,7 +13102,7 @@ var Mutation = (_g = class extends Removable {
       __privateGet(this, _mutationCache).runNext(this);
     }
   }
-}, _client2 = new WeakMap(), _observers = new WeakMap(), _mutationCache = new WeakMap(), _retryer2 = new WeakMap(), _Mutation_instances = new WeakSet(), dispatch_fn2 = function(action) {
+}, _client3 = new WeakMap(), _observers = new WeakMap(), _mutationCache = new WeakMap(), _retryer2 = new WeakMap(), _Mutation_instances = new WeakSet(), dispatch_fn2 = function(action) {
   const reducer = (state) => {
     switch (action.type) {
       case "failed":
@@ -12287,7 +13167,7 @@ var Mutation = (_g = class extends Removable {
       action
     });
   });
-}, _g);
+}, _h);
 function getDefaultState() {
   return {
     context: void 0,
@@ -12301,7 +13181,7 @@ function getDefaultState() {
     submittedAt: 0
   };
 }
-var MutationCache = (_h = class extends Subscribable {
+var MutationCache = (_i = class extends Subscribable {
   constructor(config = {}) {
     super();
     __privateAdd(this, _mutations);
@@ -12413,12 +13293,152 @@ var MutationCache = (_h = class extends Subscribable {
       )
     );
   }
-}, _mutations = new WeakMap(), _scopes = new WeakMap(), _mutationId = new WeakMap(), _h);
+}, _mutations = new WeakMap(), _scopes = new WeakMap(), _mutationId = new WeakMap(), _i);
 function scopeFor(mutation) {
   var _a3;
   return (_a3 = mutation.options.scope) == null ? void 0 : _a3.id;
 }
-var QueryCache = (_i = class extends Subscribable {
+var MutationObserver$1 = (_j = class extends Subscribable {
+  constructor(client2, options) {
+    super();
+    __privateAdd(this, _MutationObserver_instances);
+    __privateAdd(this, _client4);
+    __privateAdd(this, _currentResult2);
+    __privateAdd(this, _currentMutation);
+    __privateAdd(this, _mutateOptions);
+    __privateSet(this, _client4, client2);
+    this.setOptions(options);
+    this.bindMethods();
+    __privateMethod(this, _MutationObserver_instances, updateResult_fn).call(this);
+  }
+  bindMethods() {
+    this.mutate = this.mutate.bind(this);
+    this.reset = this.reset.bind(this);
+  }
+  setOptions(options) {
+    var _a3;
+    const prevOptions = this.options;
+    this.options = __privateGet(this, _client4).defaultMutationOptions(options);
+    if (!shallowEqualObjects(this.options, prevOptions)) {
+      __privateGet(this, _client4).getMutationCache().notify({
+        type: "observerOptionsUpdated",
+        mutation: __privateGet(this, _currentMutation),
+        observer: this
+      });
+    }
+    if ((prevOptions == null ? void 0 : prevOptions.mutationKey) && this.options.mutationKey && hashKey(prevOptions.mutationKey) !== hashKey(this.options.mutationKey)) {
+      this.reset();
+    } else if (((_a3 = __privateGet(this, _currentMutation)) == null ? void 0 : _a3.state.status) === "pending") {
+      __privateGet(this, _currentMutation).setOptions(this.options);
+    }
+  }
+  onUnsubscribe() {
+    var _a3;
+    if (!this.hasListeners()) {
+      (_a3 = __privateGet(this, _currentMutation)) == null ? void 0 : _a3.removeObserver(this);
+    }
+  }
+  onMutationUpdate(action) {
+    __privateMethod(this, _MutationObserver_instances, updateResult_fn).call(this);
+    __privateMethod(this, _MutationObserver_instances, notify_fn2).call(this, action);
+  }
+  getCurrentResult() {
+    return __privateGet(this, _currentResult2);
+  }
+  reset() {
+    var _a3;
+    (_a3 = __privateGet(this, _currentMutation)) == null ? void 0 : _a3.removeObserver(this);
+    __privateSet(this, _currentMutation, void 0);
+    __privateMethod(this, _MutationObserver_instances, updateResult_fn).call(this);
+    __privateMethod(this, _MutationObserver_instances, notify_fn2).call(this);
+  }
+  mutate(variables, options) {
+    var _a3;
+    __privateSet(this, _mutateOptions, options);
+    (_a3 = __privateGet(this, _currentMutation)) == null ? void 0 : _a3.removeObserver(this);
+    __privateSet(this, _currentMutation, __privateGet(this, _client4).getMutationCache().build(__privateGet(this, _client4), this.options));
+    __privateGet(this, _currentMutation).addObserver(this);
+    return __privateGet(this, _currentMutation).execute(variables);
+  }
+}, _client4 = new WeakMap(), _currentResult2 = new WeakMap(), _currentMutation = new WeakMap(), _mutateOptions = new WeakMap(), _MutationObserver_instances = new WeakSet(), updateResult_fn = function() {
+  var _a3;
+  const state = ((_a3 = __privateGet(this, _currentMutation)) == null ? void 0 : _a3.state) ?? getDefaultState();
+  __privateSet(this, _currentResult2, {
+    ...state,
+    isPending: state.status === "pending",
+    isSuccess: state.status === "success",
+    isError: state.status === "error",
+    isIdle: state.status === "idle",
+    mutate: this.mutate,
+    reset: this.reset
+  });
+}, notify_fn2 = function(action) {
+  notifyManager.batch(() => {
+    var _a3, _b3, _c2, _d2, _e2, _f2, _g2, _h2;
+    if (__privateGet(this, _mutateOptions) && this.hasListeners()) {
+      const variables = __privateGet(this, _currentResult2).variables;
+      const onMutateResult = __privateGet(this, _currentResult2).context;
+      const context = {
+        client: __privateGet(this, _client4),
+        meta: this.options.meta,
+        mutationKey: this.options.mutationKey
+      };
+      if ((action == null ? void 0 : action.type) === "success") {
+        try {
+          (_b3 = (_a3 = __privateGet(this, _mutateOptions)).onSuccess) == null ? void 0 : _b3.call(
+            _a3,
+            action.data,
+            variables,
+            onMutateResult,
+            context
+          );
+        } catch (e) {
+          void Promise.reject(e);
+        }
+        try {
+          (_d2 = (_c2 = __privateGet(this, _mutateOptions)).onSettled) == null ? void 0 : _d2.call(
+            _c2,
+            action.data,
+            null,
+            variables,
+            onMutateResult,
+            context
+          );
+        } catch (e) {
+          void Promise.reject(e);
+        }
+      } else if ((action == null ? void 0 : action.type) === "error") {
+        try {
+          (_f2 = (_e2 = __privateGet(this, _mutateOptions)).onError) == null ? void 0 : _f2.call(
+            _e2,
+            action.error,
+            variables,
+            onMutateResult,
+            context
+          );
+        } catch (e) {
+          void Promise.reject(e);
+        }
+        try {
+          (_h2 = (_g2 = __privateGet(this, _mutateOptions)).onSettled) == null ? void 0 : _h2.call(
+            _g2,
+            void 0,
+            action.error,
+            variables,
+            onMutateResult,
+            context
+          );
+        } catch (e) {
+          void Promise.reject(e);
+        }
+      }
+    }
+    this.listeners.forEach((listener) => {
+      listener(__privateGet(this, _currentResult2));
+    });
+  });
+}, _j);
+var QueryCache = (_k = class extends Subscribable {
   constructor(config = {}) {
     super();
     __privateAdd(this, _queries);
@@ -12505,8 +13525,8 @@ var QueryCache = (_i = class extends Subscribable {
       });
     });
   }
-}, _queries = new WeakMap(), _i);
-var QueryClient = (_j = class {
+}, _queries = new WeakMap(), _k);
+var QueryClient = (_l = class {
   constructor(config = {}) {
     __privateAdd(this, _queryCache);
     __privateAdd(this, _mutationCache2);
@@ -12793,7 +13813,7 @@ var QueryClient = (_j = class {
     __privateGet(this, _queryCache).clear();
     __privateGet(this, _mutationCache2).clear();
   }
-}, _queryCache = new WeakMap(), _mutationCache2 = new WeakMap(), _defaultOptions2 = new WeakMap(), _queryDefaults = new WeakMap(), _mutationDefaults = new WeakMap(), _mountCount = new WeakMap(), _unsubscribeFocus = new WeakMap(), _unsubscribeOnline = new WeakMap(), _j);
+}, _queryCache = new WeakMap(), _mutationCache2 = new WeakMap(), _defaultOptions2 = new WeakMap(), _queryDefaults = new WeakMap(), _mutationDefaults = new WeakMap(), _mountCount = new WeakMap(), _unsubscribeFocus = new WeakMap(), _unsubscribeOnline = new WeakMap(), _l);
 var react = { exports: {} };
 var react_production = {};
 /**
@@ -13260,6 +14280,169 @@ var QueryClientProvider = ({
   }, [client2]);
   return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientContext.Provider, { value: client2, children });
 };
+var IsRestoringContext = reactExports.createContext(false);
+var useIsRestoring = () => reactExports.useContext(IsRestoringContext);
+IsRestoringContext.Provider;
+function createValue() {
+  let isReset = false;
+  return {
+    clearReset: () => {
+      isReset = false;
+    },
+    reset: () => {
+      isReset = true;
+    },
+    isReset: () => {
+      return isReset;
+    }
+  };
+}
+var QueryErrorResetBoundaryContext = reactExports.createContext(createValue());
+var useQueryErrorResetBoundary = () => reactExports.useContext(QueryErrorResetBoundaryContext);
+var ensurePreventErrorBoundaryRetry = (options, errorResetBoundary, query) => {
+  const throwOnError = (query == null ? void 0 : query.state.error) && typeof options.throwOnError === "function" ? shouldThrowError(options.throwOnError, [query.state.error, query]) : options.throwOnError;
+  if (options.suspense || options.experimental_prefetchInRender || throwOnError) {
+    if (!errorResetBoundary.isReset()) {
+      options.retryOnMount = false;
+    }
+  }
+};
+var useClearResetErrorBoundary = (errorResetBoundary) => {
+  reactExports.useEffect(() => {
+    errorResetBoundary.clearReset();
+  }, [errorResetBoundary]);
+};
+var getHasError = ({
+  result,
+  errorResetBoundary,
+  throwOnError,
+  query,
+  suspense
+}) => {
+  return result.isError && !errorResetBoundary.isReset() && !result.isFetching && query && (suspense && result.data === void 0 || shouldThrowError(throwOnError, [result.error, query]));
+};
+var ensureSuspenseTimers = (defaultedOptions) => {
+  if (defaultedOptions.suspense) {
+    const MIN_SUSPENSE_TIME_MS = 1e3;
+    const clamp2 = (value) => value === "static" ? value : Math.max(value ?? MIN_SUSPENSE_TIME_MS, MIN_SUSPENSE_TIME_MS);
+    const originalStaleTime = defaultedOptions.staleTime;
+    defaultedOptions.staleTime = typeof originalStaleTime === "function" ? (...args) => clamp2(originalStaleTime(...args)) : clamp2(originalStaleTime);
+    if (typeof defaultedOptions.gcTime === "number") {
+      defaultedOptions.gcTime = Math.max(
+        defaultedOptions.gcTime,
+        MIN_SUSPENSE_TIME_MS
+      );
+    }
+  }
+};
+var willFetch = (result, isRestoring) => result.isLoading && result.isFetching && !isRestoring;
+var shouldSuspend = (defaultedOptions, result) => (defaultedOptions == null ? void 0 : defaultedOptions.suspense) && result.isPending;
+var fetchOptimistic = (defaultedOptions, observer2, errorResetBoundary) => observer2.fetchOptimistic(defaultedOptions).catch(() => {
+  errorResetBoundary.clearReset();
+});
+function useBaseQuery(options, Observer, queryClient2) {
+  var _a3, _b3, _c2, _d2;
+  const isRestoring = useIsRestoring();
+  const errorResetBoundary = useQueryErrorResetBoundary();
+  const client2 = useQueryClient();
+  const defaultedOptions = client2.defaultQueryOptions(options);
+  (_b3 = (_a3 = client2.getDefaultOptions().queries) == null ? void 0 : _a3._experimental_beforeQuery) == null ? void 0 : _b3.call(
+    _a3,
+    defaultedOptions
+  );
+  const query = client2.getQueryCache().get(defaultedOptions.queryHash);
+  defaultedOptions._optimisticResults = isRestoring ? "isRestoring" : "optimistic";
+  ensureSuspenseTimers(defaultedOptions);
+  ensurePreventErrorBoundaryRetry(defaultedOptions, errorResetBoundary, query);
+  useClearResetErrorBoundary(errorResetBoundary);
+  const isNewCacheEntry = !client2.getQueryCache().get(defaultedOptions.queryHash);
+  const [observer2] = reactExports.useState(
+    () => new Observer(
+      client2,
+      defaultedOptions
+    )
+  );
+  const result = observer2.getOptimisticResult(defaultedOptions);
+  const shouldSubscribe = !isRestoring && options.subscribed !== false;
+  reactExports.useSyncExternalStore(
+    reactExports.useCallback(
+      (onStoreChange) => {
+        const unsubscribe = shouldSubscribe ? observer2.subscribe(notifyManager.batchCalls(onStoreChange)) : noop$7;
+        observer2.updateResult();
+        return unsubscribe;
+      },
+      [observer2, shouldSubscribe]
+    ),
+    () => observer2.getCurrentResult(),
+    () => observer2.getCurrentResult()
+  );
+  reactExports.useEffect(() => {
+    observer2.setOptions(defaultedOptions);
+  }, [defaultedOptions, observer2]);
+  if (shouldSuspend(defaultedOptions, result)) {
+    throw fetchOptimistic(defaultedOptions, observer2, errorResetBoundary);
+  }
+  if (getHasError({
+    result,
+    errorResetBoundary,
+    throwOnError: defaultedOptions.throwOnError,
+    query,
+    suspense: defaultedOptions.suspense
+  })) {
+    throw result.error;
+  }
+  (_d2 = (_c2 = client2.getDefaultOptions().queries) == null ? void 0 : _c2._experimental_afterQuery) == null ? void 0 : _d2.call(
+    _c2,
+    defaultedOptions,
+    result
+  );
+  if (defaultedOptions.experimental_prefetchInRender && !environmentManager.isServer() && willFetch(result, isRestoring)) {
+    const promise = isNewCacheEntry ? (
+      // Fetch immediately on render in order to ensure `.promise` is resolved even if the component is unmounted
+      fetchOptimistic(defaultedOptions, observer2, errorResetBoundary)
+    ) : (
+      // subscribe to the "cache promise" so that we can finalize the currentThenable once data comes in
+      query == null ? void 0 : query.promise
+    );
+    promise == null ? void 0 : promise.catch(noop$7).finally(() => {
+      observer2.updateResult();
+    });
+  }
+  return !defaultedOptions.notifyOnChangeProps ? observer2.trackResult(result) : result;
+}
+function useQuery(options, queryClient2) {
+  return useBaseQuery(options, QueryObserver);
+}
+function useMutation(options, queryClient2) {
+  const client2 = useQueryClient();
+  const [observer2] = reactExports.useState(
+    () => new MutationObserver$1(
+      client2,
+      options
+    )
+  );
+  reactExports.useEffect(() => {
+    observer2.setOptions(options);
+  }, [observer2, options]);
+  const result = reactExports.useSyncExternalStore(
+    reactExports.useCallback(
+      (onStoreChange) => observer2.subscribe(notifyManager.batchCalls(onStoreChange)),
+      [observer2]
+    ),
+    () => observer2.getCurrentResult(),
+    () => observer2.getCurrentResult()
+  );
+  const mutate = reactExports.useCallback(
+    (variables, mutateOptions) => {
+      observer2.mutate(variables, mutateOptions).catch(noop$7);
+    },
+    [observer2]
+  );
+  if (result.error && shouldThrowError(observer2.options.throwOnError, [result.error])) {
+    throw result.error;
+  }
+  return { ...result, mutate, mutateAsync: result.mutate };
+}
 function isObject$1(value) {
   return value !== null && typeof value === "object";
 }
@@ -13800,8 +14983,8 @@ const _PartialDelegationIdentity = class _PartialDelegationIdentity extends Part
 };
 _delegation = new WeakMap();
 let PartialDelegationIdentity = _PartialDelegationIdentity;
-function isDelegationValid(chain, checks) {
-  for (const { delegation } of chain.delegations) {
+function isDelegationValid(chain2, checks) {
+  for (const { delegation } of chain2.delegations) {
     if (+new Date(Number(delegation.expiration / BigInt(1e6))) <= +Date.now()) {
       return false;
     }
@@ -13809,7 +14992,7 @@ function isDelegationValid(chain, checks) {
   const scopes = [];
   for (const s2 of scopes) {
     const scope = s2.toText();
-    for (const { delegation } of chain.delegations) {
+    for (const { delegation } of chain2.delegations) {
       if (delegation.targets === void 0) {
         continue;
       }
@@ -13846,15 +15029,15 @@ class IdleManager {
       document.addEventListener(name, _resetTimer, true);
     });
     const debounce = (func, wait) => {
-      let timeout;
+      let timeout2;
       return (...args) => {
         const context = this;
         const later = function() {
-          timeout = void 0;
+          timeout2 = void 0;
           func.apply(context, args);
         };
-        clearTimeout(timeout);
-        timeout = window.setTimeout(later, wait);
+        clearTimeout(timeout2);
+        timeout2 = window.setTimeout(later, wait);
       };
     };
     if (options == null ? void 0 : options.captureScroll) {
@@ -14348,7 +15531,7 @@ class AuthClient {
       }
     }
     let identity = new AnonymousIdentity();
-    let chain = null;
+    let chain2 = null;
     if (key) {
       try {
         const chainStorage = await storage.get(KEY_STORAGE_DELEGATION);
@@ -14358,15 +15541,15 @@ class AuthClient {
         if (options.identity) {
           identity = options.identity;
         } else if (chainStorage) {
-          chain = DelegationChain.fromJSON(chainStorage);
-          if (!isDelegationValid(chain)) {
+          chain2 = DelegationChain.fromJSON(chainStorage);
+          if (!isDelegationValid(chain2)) {
             await _deleteStorage(storage);
             key = null;
           } else {
             if ("toDer" in key) {
-              identity = PartialDelegationIdentity.fromDelegation(key, chain);
+              identity = PartialDelegationIdentity.fromDelegation(key, chain2);
             } else {
-              identity = DelegationIdentity.fromDelegation(key, chain);
+              identity = DelegationIdentity.fromDelegation(key, chain2);
             }
           }
         }
@@ -14379,7 +15562,7 @@ class AuthClient {
     let idleManager;
     if ((_a3 = options.idleOptions) == null ? void 0 : _a3.disableIdle) {
       idleManager = void 0;
-    } else if (chain || options.identity) {
+    } else if (chain2 || options.identity) {
       idleManager = IdleManager.create(options.idleOptions);
     }
     if (!key) {
@@ -14394,7 +15577,7 @@ class AuthClient {
         await storage.set(KEY_STORAGE_KEY, key.getKeyPair());
       }
     }
-    return new this(identity, key, chain, storage, idleManager, options);
+    return new this(identity, key, chain2, storage, idleManager, options);
   }
   _registerDefaultIdleCallback() {
     var _a3, _b3;
@@ -14574,7 +15757,7 @@ function mergeLoginOptions(loginOptions, otherLoginOptions) {
   };
 }
 const ONE_HOUR_IN_NANOSECONDS = BigInt(36e11);
-const DEFAULT_IDENTITY_PROVIDER = "https://id.ai";
+const DEFAULT_IDENTITY_PROVIDER = "https://id.ai/authorize";
 const InternetIdentityReactContext = reactExports.createContext(void 0);
 async function createAuthClient(createOptions) {
   const config = await loadConfig();
@@ -14711,6 +15894,54 @@ function InternetIdentityProvider({ children, createOptions }) {
     value,
     children
   });
+}
+function hasAccessControl(actor) {
+  return typeof actor === "object" && actor !== null && "_initializeAccessControl" in actor;
+}
+const ACTOR_QUERY_KEY = "actor";
+function useActor(createActor2) {
+  const { identity, isAuthenticated } = useInternetIdentity();
+  const queryClient2 = useQueryClient();
+  const actorQuery = useQuery({
+    queryKey: [ACTOR_QUERY_KEY, identity == null ? void 0 : identity.getPrincipal().toString()],
+    queryFn: async () => {
+      if (!isAuthenticated) {
+        return await createActorWithConfig(createActor2);
+      }
+      const actorOptions = {
+        agentOptions: {
+          identity
+        }
+      };
+      const actor = await createActorWithConfig(createActor2, actorOptions);
+      if (hasAccessControl(actor)) {
+        await actor._initializeAccessControl();
+      }
+      return actor;
+    },
+    // Only refetch when identity changes
+    staleTime: Number.POSITIVE_INFINITY,
+    // This will cause the actor to be recreated when the identity changes
+    enabled: true
+  });
+  reactExports.useEffect(() => {
+    if (actorQuery.data) {
+      queryClient2.invalidateQueries({
+        predicate: (query) => {
+          return !query.queryKey.includes(ACTOR_QUERY_KEY);
+        }
+      });
+      queryClient2.refetchQueries({
+        predicate: (query) => {
+          return !query.queryKey.includes(ACTOR_QUERY_KEY);
+        }
+      });
+    }
+  }, [actorQuery.data, queryClient2]);
+  return {
+    actor: actorQuery.data || null,
+    isFetching: actorQuery.isFetching
+  };
 }
 var client = { exports: {} };
 var reactDomClient_production = {};
@@ -14934,30 +16165,30 @@ var scheduler_production = {};
     "object" === typeof options && null !== options ? (options = options.delay, options = "number" === typeof options && 0 < options ? currentTime + options : currentTime) : options = currentTime;
     switch (priorityLevel) {
       case 1:
-        var timeout = -1;
+        var timeout2 = -1;
         break;
       case 2:
-        timeout = 250;
+        timeout2 = 250;
         break;
       case 5:
-        timeout = 1073741823;
+        timeout2 = 1073741823;
         break;
       case 4:
-        timeout = 1e4;
+        timeout2 = 1e4;
         break;
       default:
-        timeout = 5e3;
+        timeout2 = 5e3;
     }
-    timeout = options + timeout;
+    timeout2 = options + timeout2;
     priorityLevel = {
       id: taskIdCounter++,
       callback,
       priorityLevel,
       startTime: options,
-      expirationTime: timeout,
+      expirationTime: timeout2,
       sortIndex: -1
     };
-    options > currentTime ? (priorityLevel.sortIndex = options, push2(timerQueue, priorityLevel), null === peek(taskQueue) && priorityLevel === peek(timerQueue) && (isHostTimeoutScheduled ? (localClearTimeout(taskTimeoutID), taskTimeoutID = -1) : isHostTimeoutScheduled = true, requestHostTimeout(handleTimeout, options - currentTime))) : (priorityLevel.sortIndex = timeout, push2(taskQueue, priorityLevel), isHostCallbackScheduled || isPerformingWork || (isHostCallbackScheduled = true, isMessageLoopRunning || (isMessageLoopRunning = true, schedulePerformWorkUntilDeadline())));
+    options > currentTime ? (priorityLevel.sortIndex = options, push2(timerQueue, priorityLevel), null === peek(taskQueue) && priorityLevel === peek(timerQueue) && (isHostTimeoutScheduled ? (localClearTimeout(taskTimeoutID), taskTimeoutID = -1) : isHostTimeoutScheduled = true, requestHostTimeout(handleTimeout, options - currentTime))) : (priorityLevel.sortIndex = timeout2, push2(taskQueue, priorityLevel), isHostCallbackScheduled || isPerformingWork || (isHostCallbackScheduled = true, isMessageLoopRunning || (isMessageLoopRunning = true, schedulePerformWorkUntilDeadline())));
     return priorityLevel;
   };
   exports$1.unstable_shouldYield = shouldYieldToHost;
@@ -30280,12 +31511,12 @@ function getSafeSessionStorage() {
 }
 const storageKey = "tsr-scroll-restoration-v1_3";
 const throttle = (fn, wait) => {
-  let timeout;
+  let timeout2;
   return (...args) => {
-    if (!timeout) {
-      timeout = setTimeout(() => {
+    if (!timeout2) {
+      timeout2 = setTimeout(() => {
         fn(...args);
-        timeout = null;
+        timeout2 = null;
       }, wait);
     }
   };
@@ -34688,7 +35919,7 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1 = [
+const __iconNode$3 = [
   [
     "path",
     {
@@ -34698,7 +35929,31 @@ const __iconNode$1 = [
   ],
   ["path", { d: "M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12", key: "mt58a7" }]
 ];
-const Leaf = createLucideIcon("leaf", __iconNode$1);
+const Leaf = createLucideIcon("leaf", __iconNode$3);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$2 = [
+  ["path", { d: "m10 17 5-5-5-5", key: "1bsop3" }],
+  ["path", { d: "M15 12H3", key: "6jk70r" }],
+  ["path", { d: "M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4", key: "u53s6r" }]
+];
+const LogIn = createLucideIcon("log-in", __iconNode$2);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1 = [
+  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
+  ["path", { d: "M21 12H9", key: "dn1m92" }],
+  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
+];
+const LogOut = createLucideIcon("log-out", __iconNode$1);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -39588,13 +40843,13 @@ class FlatTree {
     this.children.forEach(callback);
   }
 }
-function delay(callback, timeout) {
+function delay(callback, timeout2) {
   const start = time.now();
   const checkElapsed = ({ timestamp }) => {
     const elapsed = timestamp - start;
-    if (elapsed >= timeout) {
+    if (elapsed >= timeout2) {
       cancelFrame(checkElapsed);
-      callback(elapsed - timeout);
+      callback(elapsed - timeout2);
     }
   };
   frame.setup(checkElapsed, true);
@@ -42476,7 +43731,7 @@ class InViewFeature extends Feature {
     var _a3;
     (_a3 = this.stopObserver) == null ? void 0 : _a3.call(this);
     const { viewport = {} } = this.node.getProps();
-    const { root: root2, margin: rootMargin, amount = "some", once } = viewport;
+    const { root: root2, margin: rootMargin, amount = "some", once: once2 } = viewport;
     const options = {
       root: root2 ? root2.current : void 0,
       rootMargin,
@@ -42487,7 +43742,7 @@ class InViewFeature extends Feature {
       if (this.isInView === isIntersecting)
         return;
       this.isInView = isIntersecting;
-      if (once && !isIntersecting && this.hasEnteredView) {
+      if (once2 && !isIntersecting && this.hasEnteredView) {
         return;
       } else if (isIntersecting) {
         this.hasEnteredView = true;
@@ -42550,7 +43805,437 @@ const featureBundle = {
   ...layout
 };
 const motion = /* @__PURE__ */ createMotionProxy(featureBundle, createDomVisualElement);
+const _ImmutableObjectStorageCreateCertificateResult = Record({
+  "method": Text,
+  "blob_hash": Text
+});
+const _ImmutableObjectStorageRefillInformation = Record({
+  "proposed_top_up_amount": Opt(Nat)
+});
+const _ImmutableObjectStorageRefillResult = Record({
+  "success": Opt(Bool),
+  "topped_up_amount": Opt(Nat)
+});
+const ImageId = Nat;
+const ExternalBlob$1 = Vec(Nat8);
+const Timestamp = Int;
+const Image = Record({
+  "id": ImageId,
+  "blob": ExternalBlob$1,
+  "filename": Text,
+  "uploadedAt": Timestamp
+});
+Service({
+  "_immutableObjectStorageBlobsAreLive": Func(
+    [Vec(Vec(Nat8))],
+    [Vec(Bool)],
+    ["query"]
+  ),
+  "_immutableObjectStorageBlobsToDelete": Func(
+    [],
+    [Vec(Vec(Nat8))],
+    ["query"]
+  ),
+  "_immutableObjectStorageConfirmBlobDeletion": Func(
+    [Vec(Vec(Nat8))],
+    [],
+    []
+  ),
+  "_immutableObjectStorageCreateCertificate": Func(
+    [Text],
+    [_ImmutableObjectStorageCreateCertificateResult],
+    []
+  ),
+  "_immutableObjectStorageRefillCashier": Func(
+    [Opt(_ImmutableObjectStorageRefillInformation)],
+    [_ImmutableObjectStorageRefillResult],
+    []
+  ),
+  "_immutableObjectStorageUpdateGatewayPrincipals": Func([], [], []),
+  "checkIsAdmin": Func([], [Bool], ["query"]),
+  "deleteImage": Func([ImageId], [Bool], []),
+  "listImages": Func([], [Vec(Image)], ["query"]),
+  "login": Func([], [Bool], []),
+  "uploadImage": Func([Text, ExternalBlob$1], [Image], [])
+});
+const idlFactory = ({ IDL: IDL2 }) => {
+  const _ImmutableObjectStorageCreateCertificateResult2 = IDL2.Record({
+    "method": IDL2.Text,
+    "blob_hash": IDL2.Text
+  });
+  const _ImmutableObjectStorageRefillInformation2 = IDL2.Record({
+    "proposed_top_up_amount": IDL2.Opt(IDL2.Nat)
+  });
+  const _ImmutableObjectStorageRefillResult2 = IDL2.Record({
+    "success": IDL2.Opt(IDL2.Bool),
+    "topped_up_amount": IDL2.Opt(IDL2.Nat)
+  });
+  const ImageId2 = IDL2.Nat;
+  const ExternalBlob3 = IDL2.Vec(IDL2.Nat8);
+  const Timestamp2 = IDL2.Int;
+  const Image2 = IDL2.Record({
+    "id": ImageId2,
+    "blob": ExternalBlob3,
+    "filename": IDL2.Text,
+    "uploadedAt": Timestamp2
+  });
+  return IDL2.Service({
+    "_immutableObjectStorageBlobsAreLive": IDL2.Func(
+      [IDL2.Vec(IDL2.Vec(IDL2.Nat8))],
+      [IDL2.Vec(IDL2.Bool)],
+      ["query"]
+    ),
+    "_immutableObjectStorageBlobsToDelete": IDL2.Func(
+      [],
+      [IDL2.Vec(IDL2.Vec(IDL2.Nat8))],
+      ["query"]
+    ),
+    "_immutableObjectStorageConfirmBlobDeletion": IDL2.Func(
+      [IDL2.Vec(IDL2.Vec(IDL2.Nat8))],
+      [],
+      []
+    ),
+    "_immutableObjectStorageCreateCertificate": IDL2.Func(
+      [IDL2.Text],
+      [_ImmutableObjectStorageCreateCertificateResult2],
+      []
+    ),
+    "_immutableObjectStorageRefillCashier": IDL2.Func(
+      [IDL2.Opt(_ImmutableObjectStorageRefillInformation2)],
+      [_ImmutableObjectStorageRefillResult2],
+      []
+    ),
+    "_immutableObjectStorageUpdateGatewayPrincipals": IDL2.Func([], [], []),
+    "checkIsAdmin": IDL2.Func([], [IDL2.Bool], ["query"]),
+    "deleteImage": IDL2.Func([ImageId2], [IDL2.Bool], []),
+    "listImages": IDL2.Func([], [IDL2.Vec(Image2)], ["query"]),
+    "login": IDL2.Func([], [IDL2.Bool], []),
+    "uploadImage": IDL2.Func([IDL2.Text, ExternalBlob3], [Image2], [])
+  });
+};
+function candid_some(value) {
+  return [
+    value
+  ];
+}
+function candid_none() {
+  return [];
+}
+function record_opt_to_undefined(arg) {
+  return arg == null ? void 0 : arg;
+}
+class ExternalBlob2 {
+  constructor(directURL, blob) {
+    __publicField(this, "_blob");
+    __publicField(this, "directURL");
+    __publicField(this, "onProgress");
+    if (blob) {
+      this._blob = blob;
+    }
+    this.directURL = directURL;
+  }
+  static fromURL(url) {
+    return new ExternalBlob2(url, null);
+  }
+  static fromBytes(blob) {
+    const url = URL.createObjectURL(new Blob([
+      new Uint8Array(blob)
+    ], {
+      type: "application/octet-stream"
+    }));
+    return new ExternalBlob2(url, blob);
+  }
+  async getBytes() {
+    if (this._blob) {
+      return this._blob;
+    }
+    const response = await fetch(this.directURL);
+    const blob = await response.blob();
+    this._blob = new Uint8Array(await blob.arrayBuffer());
+    return this._blob;
+  }
+  getDirectURL() {
+    return this.directURL;
+  }
+  withUploadProgress(onProgress) {
+    this.onProgress = onProgress;
+    return this;
+  }
+}
+class Backend {
+  constructor(actor, _uploadFile, _downloadFile, processError2) {
+    this.actor = actor;
+    this._uploadFile = _uploadFile;
+    this._downloadFile = _downloadFile;
+    this.processError = processError2;
+  }
+  async _immutableObjectStorageBlobsAreLive(arg0) {
+    if (this.processError) {
+      try {
+        const result = await this.actor._immutableObjectStorageBlobsAreLive(arg0);
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor._immutableObjectStorageBlobsAreLive(arg0);
+      return result;
+    }
+  }
+  async _immutableObjectStorageBlobsToDelete() {
+    if (this.processError) {
+      try {
+        const result = await this.actor._immutableObjectStorageBlobsToDelete();
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor._immutableObjectStorageBlobsToDelete();
+      return result;
+    }
+  }
+  async _immutableObjectStorageConfirmBlobDeletion(arg0) {
+    if (this.processError) {
+      try {
+        const result = await this.actor._immutableObjectStorageConfirmBlobDeletion(arg0);
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor._immutableObjectStorageConfirmBlobDeletion(arg0);
+      return result;
+    }
+  }
+  async _immutableObjectStorageCreateCertificate(arg0) {
+    if (this.processError) {
+      try {
+        const result = await this.actor._immutableObjectStorageCreateCertificate(arg0);
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor._immutableObjectStorageCreateCertificate(arg0);
+      return result;
+    }
+  }
+  async _immutableObjectStorageRefillCashier(arg0) {
+    if (this.processError) {
+      try {
+        const result = await this.actor._immutableObjectStorageRefillCashier(to_candid_opt_n1(this._uploadFile, this._downloadFile, arg0));
+        return from_candid__ImmutableObjectStorageRefillResult_n4(this._uploadFile, this._downloadFile, result);
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor._immutableObjectStorageRefillCashier(to_candid_opt_n1(this._uploadFile, this._downloadFile, arg0));
+      return from_candid__ImmutableObjectStorageRefillResult_n4(this._uploadFile, this._downloadFile, result);
+    }
+  }
+  async _immutableObjectStorageUpdateGatewayPrincipals() {
+    if (this.processError) {
+      try {
+        const result = await this.actor._immutableObjectStorageUpdateGatewayPrincipals();
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor._immutableObjectStorageUpdateGatewayPrincipals();
+      return result;
+    }
+  }
+  async checkIsAdmin() {
+    if (this.processError) {
+      try {
+        const result = await this.actor.checkIsAdmin();
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.checkIsAdmin();
+      return result;
+    }
+  }
+  async deleteImage(arg0) {
+    if (this.processError) {
+      try {
+        const result = await this.actor.deleteImage(arg0);
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.deleteImage(arg0);
+      return result;
+    }
+  }
+  async listImages() {
+    if (this.processError) {
+      try {
+        const result = await this.actor.listImages();
+        return from_candid_vec_n8(this._uploadFile, this._downloadFile, result);
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.listImages();
+      return from_candid_vec_n8(this._uploadFile, this._downloadFile, result);
+    }
+  }
+  async login() {
+    if (this.processError) {
+      try {
+        const result = await this.actor.login();
+        return result;
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.login();
+      return result;
+    }
+  }
+  async uploadImage(arg0, arg1) {
+    if (this.processError) {
+      try {
+        const result = await this.actor.uploadImage(arg0, await to_candid_ExternalBlob_n12(this._uploadFile, this._downloadFile, arg1));
+        return from_candid_Image_n9(this._uploadFile, this._downloadFile, result);
+      } catch (e) {
+        this.processError(e);
+        throw new Error("unreachable");
+      }
+    } else {
+      const result = await this.actor.uploadImage(arg0, await to_candid_ExternalBlob_n12(this._uploadFile, this._downloadFile, arg1));
+      return from_candid_Image_n9(this._uploadFile, this._downloadFile, result);
+    }
+  }
+}
+async function from_candid_ExternalBlob_n11(_uploadFile, _downloadFile, value) {
+  return await _downloadFile(value);
+}
+async function from_candid_Image_n9(_uploadFile, _downloadFile, value) {
+  return await from_candid_record_n10(_uploadFile, _downloadFile, value);
+}
+function from_candid__ImmutableObjectStorageRefillResult_n4(_uploadFile, _downloadFile, value) {
+  return from_candid_record_n5(_uploadFile, _downloadFile, value);
+}
+function from_candid_opt_n6(_uploadFile, _downloadFile, value) {
+  return value.length === 0 ? null : value[0];
+}
+function from_candid_opt_n7(_uploadFile, _downloadFile, value) {
+  return value.length === 0 ? null : value[0];
+}
+async function from_candid_record_n10(_uploadFile, _downloadFile, value) {
+  return {
+    id: value.id,
+    blob: await from_candid_ExternalBlob_n11(_uploadFile, _downloadFile, value.blob),
+    filename: value.filename,
+    uploadedAt: value.uploadedAt
+  };
+}
+function from_candid_record_n5(_uploadFile, _downloadFile, value) {
+  return {
+    success: record_opt_to_undefined(from_candid_opt_n6(_uploadFile, _downloadFile, value.success)),
+    topped_up_amount: record_opt_to_undefined(from_candid_opt_n7(_uploadFile, _downloadFile, value.topped_up_amount))
+  };
+}
+async function from_candid_vec_n8(_uploadFile, _downloadFile, value) {
+  return await Promise.all(value.map(async (x3) => await from_candid_Image_n9(_uploadFile, _downloadFile, x3)));
+}
+async function to_candid_ExternalBlob_n12(_uploadFile, _downloadFile, value) {
+  return await _uploadFile(value);
+}
+function to_candid__ImmutableObjectStorageRefillInformation_n2(_uploadFile, _downloadFile, value) {
+  return to_candid_record_n3(_uploadFile, _downloadFile, value);
+}
+function to_candid_opt_n1(_uploadFile, _downloadFile, value) {
+  return value === null ? candid_none() : candid_some(to_candid__ImmutableObjectStorageRefillInformation_n2(_uploadFile, _downloadFile, value));
+}
+function to_candid_record_n3(_uploadFile, _downloadFile, value) {
+  return {
+    proposed_top_up_amount: value.proposed_top_up_amount ? candid_some(value.proposed_top_up_amount) : candid_none()
+  };
+}
+function createActor(canisterId, _uploadFile, _downloadFile, options = {}) {
+  const agent = options.agent || HttpAgent.createSync({
+    ...options.agentOptions
+  });
+  if (options.agent && options.agentOptions) {
+    console.warn("Detected both agent and agentOptions passed to createActor. Ignoring agentOptions and proceeding with the provided agent.");
+  }
+  const actor = Actor.createActor(idlFactory, {
+    agent,
+    canisterId,
+    ...options.actorOptions
+  });
+  return new Backend(actor, _uploadFile, _downloadFile, options.processError);
+}
+const ADMIN_KEY = ["auth", "isAdmin"];
+function useAuth() {
+  const { loginStatus, login, clear, identity } = useInternetIdentity();
+  const { actor, isFetching } = useActor(createActor);
+  const queryClient2 = useQueryClient();
+  const isAuthenticated = loginStatus === "success";
+  const principal = (identity == null ? void 0 : identity.getPrincipal().toText()) ?? null;
+  const { data: isAdmin = false, isLoading: isAdminLoading } = useQuery({
+    queryKey: [...ADMIN_KEY, principal],
+    queryFn: async () => {
+      if (!actor) return false;
+      return actor.checkIsAdmin();
+    },
+    enabled: isAuthenticated && !!actor && !isFetching,
+    staleTime: 6e4
+  });
+  const loginMutation = useMutation({
+    mutationFn: async () => {
+      await login();
+    },
+    onSuccess: () => {
+      queryClient2.invalidateQueries({ queryKey: ADMIN_KEY });
+    }
+  });
+  const { data: _loginResult } = useQuery({
+    queryKey: ["auth", "backendLogin", principal],
+    queryFn: async () => {
+      if (!actor) return false;
+      return actor.login();
+    },
+    enabled: isAuthenticated && !!actor && !isFetching,
+    staleTime: Number.POSITIVE_INFINITY,
+    // run once per session
+    gcTime: 0
+  });
+  function logout() {
+    clear();
+    queryClient2.removeQueries({ queryKey: ADMIN_KEY });
+    queryClient2.removeQueries({ queryKey: ["auth", "backendLogin"] });
+  }
+  return {
+    isAuthenticated,
+    isAdmin,
+    isAdminLoading,
+    principal,
+    login: () => loginMutation.mutate(),
+    logout,
+    isLoggingIn: loginMutation.isPending || loginStatus === "logging-in"
+  };
+}
 function Header() {
+  const { isAuthenticated, isAdmin, login, logout, isLoggingIn } = useAuth();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "sticky top-0 z-50 bg-card border-b border-border shadow-soft", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
     motion.div,
     {
@@ -42589,7 +44274,7 @@ function Header() {
                   children: "Gallery"
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
+              isAdmin && /* @__PURE__ */ jsxRuntimeExports.jsx(
                 Link,
                 {
                   to: "/upload",
@@ -42601,19 +44286,49 @@ function Header() {
             ]
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(motion.div, { variants: slideInRight, children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Button,
-          {
-            asChild: true,
-            size: "sm",
-            className: "gap-2",
-            "data-ocid": "header.upload_button",
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/upload", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Upload, { size: 15, strokeWidth: 2 }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Upload" })
-            ] })
-          }
-        ) })
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { className: "flex items-center gap-2", variants: slideInRight, children: [
+          isAdmin && /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Button,
+            {
+              asChild: true,
+              size: "sm",
+              className: "gap-2 hidden sm:inline-flex",
+              "data-ocid": "header.upload_button",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/upload", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Upload, { size: 15, strokeWidth: 2 }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Upload" })
+              ] })
+            }
+          ),
+          isAuthenticated ? /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              variant: "outline",
+              size: "sm",
+              className: "gap-2",
+              onClick: logout,
+              "data-ocid": "header.logout_button",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { size: 15, strokeWidth: 2 }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Logout" })
+              ]
+            }
+          ) : /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              size: "sm",
+              variant: "outline",
+              className: "gap-2",
+              onClick: login,
+              disabled: isLoggingIn,
+              "data-ocid": "header.login_button",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(LogIn, { size: 15, strokeWidth: 2 }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: isLoggingIn ? "Signing in…" : "Login" })
+              ]
+            }
+          )
+        ] })
       ]
     }
   ) });
@@ -42649,10 +44364,10 @@ function Layout() {
   ] });
 }
 const GalleryPage = reactExports.lazy(
-  () => __vitePreload(() => import("./GalleryPage-HOKf4Ze-.js"), true ? __vite__mapDeps([0,1]) : void 0).then((m2) => ({ default: m2.GalleryPage }))
+  () => __vitePreload(() => import("./GalleryPage-XwJsGRw7.js"), true ? __vite__mapDeps([0,1]) : void 0).then((m2) => ({ default: m2.GalleryPage }))
 );
 const UploadPage = reactExports.lazy(
-  () => __vitePreload(() => import("./UploadPage-B_MvFETa.js"), true ? __vite__mapDeps([2,1]) : void 0).then((m2) => ({ default: m2.UploadPage }))
+  () => __vitePreload(() => import("./UploadPage-Brinrz5T.js"), true ? __vite__mapDeps([2,1]) : void 0).then((m2) => ({ default: m2.UploadPage }))
 );
 function PageSkeleton() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container max-w-7xl mx-auto px-6 py-12", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4", children: ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"].map((k2) => /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "aspect-[4/3] rounded-lg" }, k2)) }) });
@@ -42681,68 +44396,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(InternetIdentityProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) }) })
 );
 export {
-  shallowEqualObjects as $,
-  ReadRequestType as A,
+  useQueryClient as A,
   Button as B,
-  Certificate as C,
-  Principal$1 as D,
-  ExternalError as E,
-  IDL as F,
-  MissingCanisterIdErrorCode as G,
-  HttpAgent as H,
-  InputError as I,
-  encode$2 as J,
-  UncertifiedRejectErrorCode as K,
+  useMutation as C,
+  createActor as D,
+  ExternalBlob2 as E,
   Leaf as L,
-  MissingRootKeyErrorCode as M,
-  isV3ResponseBody as N,
-  isV2ResponseBody as O,
-  ProtocolError as P,
-  QueryResponseStatus as Q,
-  RequestStatusResponseStatus as R,
+  MotionConfigContext as M,
+  PresenceContext as P,
   Slot as S,
-  TimeoutWaitingForResponseErrorCode as T,
   Upload as U,
-  UncertifiedRejectUpdateErrorCode as V,
-  UnexpectedErrorCode as W,
-  decode$2 as X,
-  Subscribable as Y,
-  pendingThenable as Z,
-  resolveEnabled as _,
   cn as a,
-  resolveStaleTime as a0,
-  noop$7 as a1,
-  environmentManager as a2,
-  isValidTimeout as a3,
-  timeUntilStale as a4,
-  timeoutManager as a5,
-  focusManager as a6,
-  fetchState as a7,
-  replaceData as a8,
-  notifyManager as a9,
-  hashKey as aa,
-  getDefaultState as ab,
-  shouldThrowError as ac,
-  useQueryClient as ad,
-  useInternetIdentity as ae,
-  createActorWithConfig as af,
-  MotionConfigContext as ag,
-  isHTMLElement as ah,
-  useConstant as ai,
-  PresenceContext as aj,
-  usePresence as ak,
-  useIsomorphicLayoutEffect as al,
-  LayoutGroupContext as am,
-  Record as an,
-  Opt as ao,
-  Vec as ap,
-  Service as aq,
-  Func as ar,
-  Nat8 as as,
-  Text as at,
-  Nat as au,
-  Bool as av,
-  Int as aw,
   cva as b,
   createLucideIcon as c,
   Skeleton as d,
@@ -42756,16 +44420,16 @@ export {
   Link as l,
   motion as m,
   fadeUp as n,
-  utf8ToBytes as o,
+  ue as o,
   prefersReducedMotion as p,
-  lookupResultToBuffer as q,
+  isHTMLElement as q,
   reactExports as r,
   staggerContainer as s,
-  UnknownError as t,
-  ue as u,
-  RequestStatusDoneNoReplyErrorCode as v,
-  RejectError as w,
-  CertifiedRejectErrorCode as x,
-  UNREACHABLE_ERROR as y,
-  InvalidReadStateRequestErrorCode as z
+  useConstant as t,
+  useAuth as u,
+  usePresence as v,
+  useIsomorphicLayoutEffect as w,
+  LayoutGroupContext as x,
+  useActor as y,
+  useQuery as z
 };

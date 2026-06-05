@@ -1,5 +1,5 @@
-import { c as createLucideIcon, r as reactExports, u as ue, j as jsxRuntimeExports, m as motion, n as fadeUp, k as ease, e as itemDelay, s as staggerContainer, B as Button, U as Upload, g as fadeIn, f as fadeInScale } from "./index-F902wx8x.js";
-import { a as useUploadImage, I as Image, A as AnimatePresence, X } from "./useImages-8dYvdmNY.js";
+import { c as createLucideIcon, u as useAuth, r as reactExports, o as ue, j as jsxRuntimeExports, m as motion, n as fadeUp, k as ease, e as itemDelay, s as staggerContainer, B as Button, U as Upload, g as fadeIn, f as fadeInScale } from "./index-3cbt0zST.js";
+import { a as useUploadImage, I as Image, A as AnimatePresence, X } from "./useImages-g2jPE6uG.js";
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -231,6 +231,7 @@ function FilePreviewCard({
   );
 }
 function UploadPage() {
+  const { isAuthenticated, isAdmin, isAdminLoading } = useAuth();
   const { mutateAsync: uploadImage } = useUploadImage();
   const [uploadState, setUploadState] = reactExports.useState({
     status: "idle",
@@ -239,6 +240,12 @@ function UploadPage() {
   const [queue, setQueue] = reactExports.useState([]);
   const [isDragActive, setIsDragActive] = reactExports.useState(false);
   const inputRef = reactExports.useRef(null);
+  reactExports.useEffect(() => {
+    if (isAdminLoading) return;
+    if (!isAuthenticated || !isAdmin) {
+      window.location.href = "/";
+    }
+  }, [isAuthenticated, isAdmin, isAdminLoading]);
   reactExports.useEffect(() => {
     if (uploadState.status !== "success") return;
     const timer = setTimeout(() => {
@@ -266,6 +273,7 @@ function UploadPage() {
     },
     [uploadState.status]
   );
+  if (isAdminLoading || !isAdmin) return null;
   function handleInputChange(e) {
     if (e.target.files) addFiles(Array.from(e.target.files));
     e.target.value = "";

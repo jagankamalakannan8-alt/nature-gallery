@@ -23,7 +23,9 @@ export interface Image {
 }
 export type ImageId = bigint;
 export interface backendInterface {
+    checkIsAdmin(): Promise<boolean>;
     deleteImage(id: ImageId): Promise<boolean>;
     listImages(): Promise<Array<Image>>;
+    login(): Promise<boolean>;
     uploadImage(filename: string, blob: ExternalBlob): Promise<Image>;
 }

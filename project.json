@@ -1,21 +1,19 @@
 {
-  "overview": "A beautiful nature photo gallery where anyone can upload and view stunning nature images. Features a responsive masonry grid, drag-and-drop uploads, and silky-smooth animations throughout.",
+  "overview": "A nature photo gallery where anyone can view images, but only admin users can upload new photos.",
   "features": [
-    "Drag-and-drop image upload with progress feedback",
-    "Public masonry gallery visible to everyone",
-    "Smooth fade-in and staggered animations on image load",
-    "Full-screen lightbox with smooth open/close transitions",
-    "Responsive design for mobile, tablet, and desktop",
-    "Image metadata display (filename, upload date)"
+    "Public masonry grid gallery",
+    "Admin-only image uploads",
+    "Internet Identity login",
+    "First-user becomes admin",
+    "Non-admins redirected from upload page"
   ],
   "category": "gallery",
   "tags": [
+    "photos",
     "nature",
     "gallery",
-    "photos",
-    "animations",
-    "upload",
-    "masonry"
+    "admin",
+    "upload"
   ],
-  "last_updated": "2026-04-19T15:34:05.918Z"
+  "last_updated": "2026-06-05T09:05:24.940Z"
 }

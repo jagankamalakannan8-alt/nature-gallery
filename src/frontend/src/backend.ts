@@ -115,8 +115,10 @@ export interface backendInterface {
     _immutableObjectStorageCreateCertificate(blobHash: string): Promise<_ImmutableObjectStorageCreateCertificateResult>;
     _immutableObjectStorageRefillCashier(refillInformation: _ImmutableObjectStorageRefillInformation | null): Promise<_ImmutableObjectStorageRefillResult>;
     _immutableObjectStorageUpdateGatewayPrincipals(): Promise<void>;
+    checkIsAdmin(): Promise<boolean>;
     deleteImage(id: ImageId): Promise<boolean>;
     listImages(): Promise<Array<Image>>;
+    login(): Promise<boolean>;
     uploadImage(filename: string, blob: ExternalBlob): Promise<Image>;
 }
 import type { ExternalBlob as _ExternalBlob, Image as _Image, ImageId as _ImageId, Timestamp as _Timestamp, _ImmutableObjectStorageRefillInformation as __ImmutableObjectStorageRefillInformation, _ImmutableObjectStorageRefillResult as __ImmutableObjectStorageRefillResult } from "./declarations/backend.did.d.ts";
@@ -206,6 +208,20 @@ export class Backend implements backendInterface {
             return result;
         }
     }
+    async checkIsAdmin(): Promise<boolean> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.checkIsAdmin();
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.checkIsAdmin();
+            return result;
+        }
+    }
     async deleteImage(arg0: ImageId): Promise<boolean> {
         if (this.processError) {
             try {
@@ -232,6 +248,20 @@ export class Backend implements backendInterface {
         } else {
             const result = await this.actor.listImages();
             return from_candid_vec_n8(this._uploadFile, this._downloadFile, result);
+        }
+    }
+    async login(): Promise<boolean> {
+        if (this.processError) {
+            try {
+                const result = await this.actor.login();
+                return result;
+            } catch (e) {
+                this.processError(e);
+                throw new Error("unreachable");
+            }
+        } else {
+            const result = await this.actor.login();
+            return result;
         }
     }
     async uploadImage(arg0: string, arg1: ExternalBlob): Promise<Image> {

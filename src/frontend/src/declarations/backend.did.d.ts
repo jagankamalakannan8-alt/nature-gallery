@@ -49,8 +49,10 @@ export interface _SERVICE {
     _ImmutableObjectStorageRefillResult
   >,
   '_immutableObjectStorageUpdateGatewayPrincipals' : ActorMethod<[], undefined>,
+  'checkIsAdmin' : ActorMethod<[], boolean>,
   'deleteImage' : ActorMethod<[ImageId], boolean>,
   'listImages' : ActorMethod<[], Array<Image>>,
+  'login' : ActorMethod<[], boolean>,
   'uploadImage' : ActorMethod<[string, ExternalBlob], Image>,
 }
 export declare const idlService: IDL.ServiceClass;

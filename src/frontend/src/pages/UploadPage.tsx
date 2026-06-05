@@ -3,6 +3,7 @@ import { AlertCircle, CheckCircle2, ImageIcon, Upload, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
+import { useAuth } from "../hooks/useAuth";
 import { useUploadImage } from "../hooks/useImages";
 import {
   ease,
@@ -236,6 +237,7 @@ function FilePreviewCard({
 // ---------- UploadPage ----------
 
 export function UploadPage() {
+  const { isAuthenticated, isAdmin, isAdminLoading } = useAuth();
   const { mutateAsync: uploadImage } = useUploadImage();
   const [uploadState, setUploadState] = useState<UploadState>({
     status: "idle",
@@ -244,6 +246,14 @@ export function UploadPage() {
   const [queue, setQueue] = useState<FilePreview[]>([]);
   const [isDragActive, setIsDragActive] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Redirect non-admins silently to gallery
+  useEffect(() => {
+    if (isAdminLoading) return;
+    if (!isAuthenticated || !isAdmin) {
+      window.location.href = "/";
+    }
+  }, [isAuthenticated, isAdmin, isAdminLoading]);
 
   // Auto-navigate to gallery on success after 1.5 seconds
   useEffect(() => {
@@ -274,6 +284,9 @@ export function UploadPage() {
     },
     [uploadState.status],
   );
+
+  // Don't render upload UI while checking admin status or if not admin
+  if (isAdminLoading || !isAdmin) return null;
 
   function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
     if (e.target.files) addFiles(Array.from(e.target.files));

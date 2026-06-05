@@ -56,8 +56,10 @@ export const idlService = IDL.Service({
       [],
     ),
   '_immutableObjectStorageUpdateGatewayPrincipals' : IDL.Func([], [], []),
+  'checkIsAdmin' : IDL.Func([], [IDL.Bool], ['query']),
   'deleteImage' : IDL.Func([ImageId], [IDL.Bool], []),
   'listImages' : IDL.Func([], [IDL.Vec(Image)], ['query']),
+  'login' : IDL.Func([], [IDL.Bool], []),
   'uploadImage' : IDL.Func([IDL.Text, ExternalBlob], [Image], []),
 });
 
@@ -112,8 +114,10 @@ export const idlFactory = ({ IDL }) => {
         [],
       ),
     '_immutableObjectStorageUpdateGatewayPrincipals' : IDL.Func([], [], []),
+    'checkIsAdmin' : IDL.Func([], [IDL.Bool], ['query']),
     'deleteImage' : IDL.Func([ImageId], [IDL.Bool], []),
     'listImages' : IDL.Func([], [IDL.Vec(Image)], ['query']),
+    'login' : IDL.Func([], [IDL.Bool], []),
     'uploadImage' : IDL.Func([IDL.Text, ExternalBlob], [Image], []),
   });
 };

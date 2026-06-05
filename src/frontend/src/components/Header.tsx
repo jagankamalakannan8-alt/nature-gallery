@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { slideInLeft, slideInRight, staggerFast } from "@/lib/animations";
 import { Link } from "@tanstack/react-router";
-import { Leaf, Upload } from "lucide-react";
+import { Leaf, LogIn, LogOut, Upload } from "lucide-react";
 import { motion } from "motion/react";
+import { useAuth } from "../hooks/useAuth";
 
 export function Header() {
+  const { isAuthenticated, isAdmin, login, logout, isLoggingIn } = useAuth();
+
   return (
     <header className="sticky top-0 z-50 bg-card border-b border-border shadow-soft">
       <motion.div
@@ -41,28 +44,57 @@ export function Header() {
           >
             Gallery
           </Link>
-          <Link
-            to="/upload"
-            className="transition-smooth hover:text-foreground [&.active]:text-foreground [&.active]:font-medium"
-            data-ocid="nav.upload_link"
-          >
-            Upload
-          </Link>
+          {isAdmin && (
+            <Link
+              to="/upload"
+              className="transition-smooth hover:text-foreground [&.active]:text-foreground [&.active]:font-medium"
+              data-ocid="nav.upload_link"
+            >
+              Upload
+            </Link>
+          )}
         </motion.nav>
 
-        {/* CTA */}
-        <motion.div variants={slideInRight}>
-          <Button
-            asChild
-            size="sm"
-            className="gap-2"
-            data-ocid="header.upload_button"
-          >
-            <Link to="/upload">
-              <Upload size={15} strokeWidth={2} />
-              <span>Upload</span>
-            </Link>
-          </Button>
+        {/* Right actions */}
+        <motion.div className="flex items-center gap-2" variants={slideInRight}>
+          {isAdmin && (
+            <Button
+              asChild
+              size="sm"
+              className="gap-2 hidden sm:inline-flex"
+              data-ocid="header.upload_button"
+            >
+              <Link to="/upload">
+                <Upload size={15} strokeWidth={2} />
+                <span>Upload</span>
+              </Link>
+            </Button>
+          )}
+
+          {isAuthenticated ? (
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-2"
+              onClick={logout}
+              data-ocid="header.logout_button"
+            >
+              <LogOut size={15} strokeWidth={2} />
+              <span>Logout</span>
+            </Button>
+          ) : (
+            <Button
+              size="sm"
+              variant="outline"
+              className="gap-2"
+              onClick={login}
+              disabled={isLoggingIn}
+              data-ocid="header.login_button"
+            >
+              <LogIn size={15} strokeWidth={2} />
+              <span>{isLoggingIn ? "Signing in…" : "Login"}</span>
+            </Button>
+          )}
         </motion.div>
       </motion.div>
     </header>

@@ -51,6 +51,8 @@ export const mockBackend: backendInterface = {
     uploadedAt: BigInt(Date.now()),
   }),
   deleteImage: async (_id) => true,
+  checkIsAdmin: async () => false,
+  login: async () => false,
   _immutableObjectStorageBlobsAreLive: async (_hashes) => [],
   _immutableObjectStorageBlobsToDelete: async () => [],
   _immutableObjectStorageConfirmBlobDeletion: async (_blobs) => {},

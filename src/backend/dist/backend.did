@@ -31,7 +31,9 @@ service : {
    opt _ImmutableObjectStorageRefillInformation) ->
    (_ImmutableObjectStorageRefillResult);
   _immutableObjectStorageUpdateGatewayPrincipals: () -> ();
+  checkIsAdmin: () -> (bool) query;
   deleteImage: (id: ImageId) -> (bool);
   listImages: () -> (vec Image) query;
+  login: () -> (bool);
   uploadImage: (filename: text, "blob": ExternalBlob) -> (Image);
 }
